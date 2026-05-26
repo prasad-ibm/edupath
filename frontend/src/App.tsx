@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import SaveSessionButton from './components/layout/SaveSessionButton';
 import ProtectedRoute from './components/layout/ProtectedRoute';
-import ClassLinkCallback from './components/auth/ClassLinkCallback';
 import LoginPage from './pages/LoginPage';
 import Dashboard from './pages/Dashboard';
 import CoursePage from './pages/CoursePage';
@@ -28,7 +27,6 @@ export default function App() {
       <Routes>
         {/* Public routes */}
         <Route path="/login" element={<LoginPage />} />
-        <Route path="/auth/callback" element={<ClassLinkCallback />} />
 
         {/* Protected routes with layout */}
         <Route

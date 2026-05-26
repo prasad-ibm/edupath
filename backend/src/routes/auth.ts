@@ -1,91 +1,63 @@
 import { Router, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
+import { randomUUID } from 'crypto';
 import { config } from '../config/env';
-import {
-  buildAuthUrl,
-  exchangeCodeForToken,
-  getUserInfo,
-  getStudentGrade,
-} from '../services/classlinkService';
 import { supabase } from '../db/supabaseClient';
 import { authenticate, AuthRequest } from '../middleware/authenticate';
-import { authLimiter } from '../middleware/rateLimiter';
 
 const router = Router();
 
 /**
- * GET /auth/classlink
- * Redirects browser to ClassLink OAuth authorization page
+ * POST /auth/login
+ * Simple login — accepts displayName + grade, returns a JWT.
+ * No external provider needed. ClassLink SSO can be wired in later.
  */
-router.get('/classlink', authLimiter, (_req: Request, res: Response) => {
-  const authUrl = buildAuthUrl();
-  res.redirect(authUrl);
-});
+router.post('/login', async (req: Request, res: Response) => {
+  const { displayName, grade } = req.body as { displayName: string; grade: number };
 
-/**
- * GET /auth/callback
- * ClassLink redirects here after authentication
- */
-router.get('/callback', authLimiter, async (req: Request, res: Response) => {
-  const { code, error } = req.query;
-
-  if (error || !code) {
-    return res.redirect(`${config.frontendUrl}/login?error=auth_failed`);
+  if (!displayName || !grade || grade < 1 || grade > 8) {
+    res.status(400).json({ error: 'displayName and grade (1–8) are required' });
+    return;
   }
 
+  // Generate a stable ID based on displayName (so the same name always gets the same user)
+  const stableId = `local_${displayName.toLowerCase().replace(/\s+/g, '_')}`;
+  let userId = randomUUID();
+
+  // Try to upsert user in DB (optional — works without Supabase too)
   try {
-    // 1. Exchange code for ClassLink access token
-    const accessToken = await exchangeCodeForToken(code as string);
-
-    // 2. Get user info from ClassLink
-    const userInfo = await getUserInfo(accessToken);
-
-    // 3. Get grade from OneRoster
-    const grade = await getStudentGrade(accessToken, userInfo.sourcedId);
-
-    // 4. Upsert user in our DB
-    const { data: userData, error: dbError } = await supabase
+    const { data } = await supabase
       .from('users')
       .upsert(
         {
-          classlink_id: userInfo.sourcedId,
-          display_name: userInfo.displayName,
+          classlink_id: stableId,
+          display_name: displayName,
           grade,
           updated_at: new Date().toISOString(),
         },
         { onConflict: 'classlink_id' }
       )
-      .select('id, classlink_id, display_name, grade')
+      .select('id')
       .single();
 
-    if (dbError || !userData) {
-      console.error('DB upsert error:', dbError);
-      return res.redirect(`${config.frontendUrl}/login?error=db_error`);
-    }
-
-    // 5. Sign internal JWT (memory-only on client — not stored in localStorage)
-    const token = jwt.sign(
-      {
-        userId: userData.id,
-        classlinkId: userData.classlink_id,
-        displayName: userData.display_name,
-        grade: userData.grade,
-      },
-      config.jwtSecret,
-      { expiresIn: '1h' }
-    );
-
-    // 6. Redirect to frontend with token in URL fragment (not query string)
-    return res.redirect(`${config.frontendUrl}/auth/callback#token=${token}`);
-  } catch (err) {
-    console.error('Auth callback error:', err);
-    return res.redirect(`${config.frontendUrl}/login?error=server_error`);
+    if (data?.id) userId = data.id;
+  } catch {
+    // DB not configured yet — use generated UUID (progress won't persist)
+    console.warn('[Auth] Supabase not configured — progress will not be saved.');
   }
+
+  const token = jwt.sign(
+    { userId, classlinkId: stableId, displayName, grade },
+    config.jwtSecret,
+    { expiresIn: '8h' }
+  );
+
+  res.json({ token, user: { userId, displayName, grade } });
 });
 
 /**
  * GET /auth/me
- * Returns current user profile from JWT
+ * Returns current user profile from JWT.
  */
 router.get('/me', authenticate, (req: AuthRequest, res: Response) => {
   res.json({ user: req.user });

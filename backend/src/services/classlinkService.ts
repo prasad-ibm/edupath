@@ -1,3 +1,20 @@
+/**
+ * ClassLink OAuth 2.0 + OneRoster Service
+ *
+ * This file is ready to use — wire it back in when you are ready
+ * to enable ClassLink SSO for school deployment.
+ *
+ * Steps to re-enable:
+ * 1. Add ClassLink credentials to backend/.env (see .env.example)
+ * 2. Uncomment the classlink block in src/config/env.ts
+ * 3. Add the OAuth routes back to src/routes/auth.ts
+ * 4. Replace LoginPage.tsx login form with the ClassLink SSO button
+ */
+
+// ── Placeholder export so this file compiles without the config block ──────
+export {};
+
+/*
 import axios from 'axios';
 import { config } from '../config/env';
 
@@ -7,16 +24,6 @@ export interface ClassLinkUserInfo {
   email?: string;
 }
 
-export interface ClassLinkStudent {
-  sourcedId: string;
-  givenName: string;
-  familyName: string;
-  grades: string[]; // CEDS format e.g. ["03"]
-}
-
-/**
- * Exchange authorization code for ClassLink access token
- */
 export async function exchangeCodeForToken(code: string): Promise<string> {
   const params = new URLSearchParams({
     code,
@@ -25,17 +32,12 @@ export async function exchangeCodeForToken(code: string): Promise<string> {
     redirect_uri: config.classlink.redirectUri,
     grant_type: 'authorization_code',
   });
-
   const response = await axios.post(config.classlink.tokenUrl, params.toString(), {
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
   });
-
   return response.data.access_token as string;
 }
 
-/**
- * Fetch basic user info from ClassLink
- */
 export async function getUserInfo(accessToken: string): Promise<ClassLinkUserInfo> {
   const response = await axios.get(config.classlink.userInfoUrl, {
     headers: { Authorization: `Bearer ${accessToken}` },
@@ -48,30 +50,23 @@ export async function getUserInfo(accessToken: string): Promise<ClassLinkUserInf
   };
 }
 
-/**
- * Fetch student record from OneRoster to get grade level
- */
 export async function getStudentGrade(accessToken: string, sourcedId: string): Promise<number> {
   try {
     const response = await axios.get(
       `${config.classlink.oneRosterBase}/students/${sourcedId}`,
       { headers: { Authorization: `Bearer ${accessToken}` } }
     );
-    const student: ClassLinkStudent = response.data.user || response.data.student;
-    if (student?.grades && student.grades.length > 0) {
-      // CEDS grades are zero-padded strings: "01" = Grade 1
+    const student = response.data.user || response.data.student;
+    if (student?.grades?.length > 0) {
       const grade = parseInt(student.grades[0], 10);
       if (grade >= 1 && grade <= 8) return grade;
     }
   } catch (err) {
-    console.error('OneRoster grade fetch failed, defaulting to grade 1:', err);
+    console.error('OneRoster grade fetch failed:', err);
   }
-  return 1; // Safe default
+  return 1;
 }
 
-/**
- * Build the ClassLink authorization URL for SSO redirect
- */
 export function buildAuthUrl(): string {
   const params = new URLSearchParams({
     client_id: config.classlink.clientId,
@@ -81,3 +76,4 @@ export function buildAuthUrl(): string {
   });
   return `${config.classlink.authUrl}?${params.toString()}`;
 }
+*/
