@@ -1,0 +1,120 @@
+{
+  "grade": 1,
+  "subject": "chemistry",
+  "questions": [
+    {
+      "id": "diag_chem_g1_001",
+      "difficulty": 1,
+      "prompt": "Which of these is a liquid?",
+      "options": [
+        { "id": "a", "text": "A rock" },
+        { "id": "b", "text": "A glass of milk" },
+        { "id": "c", "text": "A wooden block" },
+        { "id": "d", "text": "A piece of ice" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_chem_g1_002",
+      "difficulty": 1,
+      "prompt": "What happens to ice when you put it outside on a warm day?",
+      "options": [
+        { "id": "a", "text": "It gets bigger" },
+        { "id": "b", "text": "It stays the same" },
+        { "id": "c", "text": "It melts into water" },
+        { "id": "d", "text": "It turns into steam" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_chem_g1_003",
+      "difficulty": 1,
+      "prompt": "Which of these things can you pour?",
+      "options": [
+        { "id": "a", "text": "A brick" },
+        { "id": "b", "text": "Orange juice" },
+        { "id": "c", "text": "A pencil" },
+        { "id": "d", "text": "A shoe" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_chem_g1_004",
+      "difficulty": 2,
+      "prompt": "What are the three states of water?",
+      "options": [
+        { "id": "a", "text": "Solid, Liquid, Gas" },
+        { "id": "b", "text": "Hot, Cold, Warm" },
+        { "id": "c", "text": "Heavy, Light, Medium" },
+        { "id": "d", "text": "Big, Small, Tiny" }
+      ],
+      "correctId": "a"
+    },
+    {
+      "id": "diag_chem_g1_005",
+      "difficulty": 2,
+      "prompt": "What happens when you mix baking soda and vinegar?",
+      "options": [
+        { "id": "a", "text": "Nothing happens" },
+        { "id": "b", "text": "They create a fizzy bubbling reaction" },
+        { "id": "c", "text": "They become solid" },
+        { "id": "d", "text": "They both disappear" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_chem_g1_006",
+      "difficulty": 2,
+      "prompt": "At what temperature does liquid water turn into ice?",
+      "options": [
+        { "id": "a", "text": "100°F (38°C)" },
+        { "id": "b", "text": "50°F (10°C)" },
+        { "id": "c", "text": "212°F (100°C)" },
+        { "id": "d", "text": "32°F (0°C)" }
+      ],
+      "correctId": "d"
+    },
+    {
+      "id": "diag_chem_g1_007",
+      "difficulty": 3,
+      "prompt": "What is it called when a liquid changes into a gas?",
+      "options": [
+        { "id": "a", "text": "Freezing" },
+        { "id": "b", "text": "Condensation" },
+        { "id": "c", "text": "Evaporation" },
+        { "id": "d", "text": "Melting" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_chem_g1_008",
+      "difficulty": 3,
+      "prompt": "When you mix red and blue food coloring in water, what color do you get?",
+      "options": [
+        { "id": "a", "text": "Green" },
+        { "id": "b", "text": "Yellow" },
+        { "id": "c", "text": "Orange" },
+        { "id": "d", "text": "Purple" }
+      ],
+      "correctId": "d"
+    },
+    {
+      "id": "diag_chem_g1_009",
+      "difficulty": 3,
+      "prompt": "Which material dissolves (disappears) when mixed with water?",
+      "options": [
+        { "id": "a", "text": "Sand" },
+        { "id": "b", "text": "Sugar" },
+        { "id": "c", "text": "Rocks" },
+        { "id": "d", "text": "Oil" }
+      ],
+      "correctId": "b"
+    }
+  ],
+  "difficultyBands": {
+    "0": { "lessonStartIndex": 0 },
+    "1": { "lessonStartIndex": 0 },
+    "2": { "lessonStartIndex": 1 },
+    "3": { "lessonStartIndex": 2 }
+  }
+}

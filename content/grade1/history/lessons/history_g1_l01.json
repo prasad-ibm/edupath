@@ -1,0 +1,129 @@
+{
+  "id": "history_g1_l01",
+  "title": "Then and Now — How Communities Change",
+  "grade": 1,
+  "subject": "history",
+  "content": {
+    "text": "Have you ever looked at an old photograph of your neighborhood? Things look very different!\n\nA community is a place where people live, work, and play together. Communities change over time — sometimes slowly, sometimes quickly.\n\n🏠 Long Ago: People built homes out of wood or stone. There were no supermarkets — families grew their own food or traded with neighbors. Streets were made of dirt, and people traveled by walking or riding horses.\n\n🏙️ Today: Our communities have houses with electricity and running water. We have schools, hospitals, fire stations, and stores. Cars, buses, and trains help us travel quickly.\n\nCommunity helpers like teachers, doctors, firefighters, and police officers have always been important — even long ago! Their jobs may have changed a little, but they still help keep us safe and healthy.\n\nLearning about the past helps us understand how our community became what it is today.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/community_then_now.svg",
+        "alt": "Side by side image of a community from the past and today"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "Maria's Town — Then and Now",
+    "text": "Maria lives in a small town called Maplewood. One day, her grandmother showed her an old photograph of the same town from 100 years ago.\n\nIn the old photo, the streets were made of dirt. There were only a few buildings — a general store, a church, and a small schoolhouse. Horses pulled wagons down the road. Children played outside all day because there was no television or internet.\n\nGrandma pointed to a small wooden building. \"That was our school,\" she said. \"All the children from first grade to eighth grade sat in the same room with one teacher!\"\n\nMaria looked at her town today. There were paved roads with cars and buses. A big supermarket, a library, a hospital, and three different schools had been built over the years. The old wooden schoolhouse was now a museum.\n\n\"Do you think people were happy back then?\" Maria asked.\n\nGrandma smiled. \"Very happy,\" she said. \"They just had different things to make them happy. They had strong communities, and they helped each other every day.\"\n\nMaria thought about this. Even though so much had changed, the most important thing — people caring for each other — had stayed the same."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_hist_g1_l01_01",
+      "prompt": "What were the streets made of in Maplewood 100 years ago?",
+      "options": [
+        { "id": "a", "text": "Concrete" },
+        { "id": "b", "text": "Bricks" },
+        { "id": "c", "text": "Dirt" },
+        { "id": "d", "text": "Wood" }
+      ],
+      "correctId": "c",
+      "hint": "Look at the second paragraph of the passage — it describes what the streets looked like in the old photo."
+    },
+    {
+      "id": "cq_hist_g1_l01_02",
+      "prompt": "How did children travel to school long ago in Maplewood?",
+      "options": [
+        { "id": "a", "text": "By school bus" },
+        { "id": "b", "text": "By car" },
+        { "id": "c", "text": "By horse-drawn wagon" },
+        { "id": "d", "text": "By train" }
+      ],
+      "correctId": "c",
+      "hint": "The passage mentions horses — re-read the second paragraph carefully."
+    },
+    {
+      "id": "cq_hist_g1_l01_03",
+      "prompt": "What is the old wooden schoolhouse used for today?",
+      "options": [
+        { "id": "a", "text": "It is still a school" },
+        { "id": "b", "text": "It is a museum" },
+        { "id": "c", "text": "It was torn down" },
+        { "id": "d", "text": "It is a library" }
+      ],
+      "correctId": "b",
+      "hint": "Read the fourth paragraph — it tells you what happened to the old schoolhouse."
+    },
+    {
+      "id": "cq_hist_g1_l01_04",
+      "prompt": "According to Grandma, what is the most important thing that has NOT changed over time?",
+      "options": [
+        { "id": "a", "text": "The roads and buildings" },
+        { "id": "b", "text": "The technology people use" },
+        { "id": "c", "text": "People caring for each other" },
+        { "id": "d", "text": "The number of schools" }
+      ],
+      "correctId": "c",
+      "hint": "Look at the last paragraph — what does Maria realize stays the same even when things change?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_hist_g1_l01_01",
+        "prompt": "What is a community?",
+        "options": [
+          { "id": "a", "text": "A type of building" },
+          { "id": "b", "text": "A place where people live, work, and play together" },
+          { "id": "c", "text": "Only a city with over 1,000 people" },
+          { "id": "d", "text": "A forest or park" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l01_02",
+        "prompt": "How did people travel from place to place long ago?",
+        "options": [
+          { "id": "a", "text": "By airplane" },
+          { "id": "b", "text": "By car" },
+          { "id": "c", "text": "By walking or riding horses" },
+          { "id": "d", "text": "By helicopter" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l01_03",
+        "prompt": "Which community helper has always been important?",
+        "options": [
+          { "id": "a", "text": "Video game designers" },
+          { "id": "b", "text": "Social media managers" },
+          { "id": "c", "text": "Firefighters" },
+          { "id": "d", "text": "Astronauts" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l01_04",
+        "prompt": "Why is learning about the past important?",
+        "options": [
+          { "id": "a", "text": "So we can live in the past" },
+          { "id": "b", "text": "It helps us understand how our community became what it is today" },
+          { "id": "c", "text": "So we never have to change anything" },
+          { "id": "d", "text": "It is not important" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l01_05",
+        "prompt": "In the story, what did Grandma show Maria?",
+        "options": [
+          { "id": "a", "text": "A map of their town" },
+          { "id": "b", "text": "A new school" },
+          { "id": "c", "text": "An old photograph of Maplewood" },
+          { "id": "d", "text": "A library book" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

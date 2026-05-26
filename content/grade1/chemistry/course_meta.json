@@ -1,0 +1,10 @@
+{
+  "grade": 1,
+  "subject": "chemistry",
+  "title": "Introduction to Chemistry — Grade 1",
+  "lessonSequence": [
+    "chemistry_g1_l01",
+    "chemistry_g1_l02",
+    "chemistry_g1_l03"
+  ]
+}

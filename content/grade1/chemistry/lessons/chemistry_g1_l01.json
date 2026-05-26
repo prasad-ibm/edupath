@@ -1,0 +1,127 @@
+{
+  "id": "chemistry_g1_l01",
+  "title": "Water and Ice — States of Matter",
+  "grade": 1,
+  "subject": "chemistry",
+  "content": {
+    "text": "Everything around us is made of matter. Matter is anything that takes up space and has weight.\n\nWater is a very special kind of matter. It can exist in three different forms, called states:\n\n🧊 Solid — When water is very cold (below 32°F or 0°C), it becomes ice. Ice is hard and keeps its shape.\n\n💧 Liquid — At room temperature, water flows and takes the shape of whatever container it is in.\n\n💨 Gas — When water gets very hot, it turns into water vapor (steam). You can see steam coming from a hot cup of soup!\n\nWhen ice warms up, it melts and becomes liquid water. When liquid water cools down, it freezes back into ice. These changes happen every day in our world!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/states_of_matter.svg",
+        "alt": "Diagram showing ice, liquid water, and steam"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Drag the ice cube into the warm water bowl and observe what happens to the ice!",
+    "ingredients": [
+      { "id": "ice_cube", "label": "Ice Cube", "icon": "" },
+      { "id": "warm_water", "label": "Warm Water Bowl", "icon": "" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["ice_cube", "warm_water"],
+        "animationKey": "ice_melting",
+        "resultLabel": "The ice is melting! Heat from the warm water makes the ice turn into liquid water."
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_chem_g1_l01_01",
+      "prompt": "What happens to ice when it gets warm?",
+      "options": [
+        { "id": "a", "text": "It gets bigger and stays solid" },
+        { "id": "b", "text": "It melts and becomes liquid water" },
+        { "id": "c", "text": "It turns into steam immediately" },
+        { "id": "d", "text": "Nothing happens to it" }
+      ],
+      "correctId": "b",
+      "hint": "Think about what you saw in the experiment when ice touched the warm water."
+    },
+    {
+      "id": "pq_chem_g1_l01_02",
+      "prompt": "Which state of water is the hardest?",
+      "options": [
+        { "id": "a", "text": "Steam" },
+        { "id": "b", "text": "Liquid water" },
+        { "id": "c", "text": "Ice" },
+        { "id": "d", "text": "All are equally hard" }
+      ],
+      "correctId": "c",
+      "hint": "Which form of water can you pick up and hold without it changing shape?"
+    },
+    {
+      "id": "pq_chem_g1_l01_03",
+      "prompt": "At what temperature does water freeze into ice?",
+      "options": [
+        { "id": "a", "text": "100°F (38°C)" },
+        { "id": "b", "text": "50°F (10°C)" },
+        { "id": "c", "text": "32°F (0°C)" },
+        { "id": "d", "text": "212°F (100°C)" }
+      ],
+      "correctId": "c",
+      "hint": "This is a very cold temperature — think about how cold it needs to be outside to snow."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_chem_g1_l01_01",
+        "prompt": "Ice is a form of which substance?",
+        "options": [
+          { "id": "a", "text": "Air" },
+          { "id": "b", "text": "Sand" },
+          { "id": "c", "text": "Water" },
+          { "id": "d", "text": "Metal" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l01_02",
+        "prompt": "What is the process called when liquid water turns into ice?",
+        "options": [
+          { "id": "a", "text": "Melting" },
+          { "id": "b", "text": "Evaporation" },
+          { "id": "c", "text": "Freezing" },
+          { "id": "d", "text": "Boiling" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l01_03",
+        "prompt": "Which of the following is an example of a liquid?",
+        "options": [
+          { "id": "a", "text": "Ice cube" },
+          { "id": "b", "text": "A glass of orange juice" },
+          { "id": "c", "text": "A rock" },
+          { "id": "d", "text": "Steam from a kettle" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l01_04",
+        "prompt": "What happens to water when it is heated to a very high temperature?",
+        "options": [
+          { "id": "a", "text": "It becomes ice" },
+          { "id": "b", "text": "It becomes heavier" },
+          { "id": "c", "text": "It turns into water vapor (steam)" },
+          { "id": "d", "text": "It disappears completely" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l01_05",
+        "prompt": "How many states of matter does water have?",
+        "options": [
+          { "id": "a", "text": "1" },
+          { "id": "b", "text": "2" },
+          { "id": "c", "text": "3" },
+          { "id": "d", "text": "4" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

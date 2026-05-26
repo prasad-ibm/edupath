@@ -1,0 +1,16 @@
+{
+  "name": "edu-app",
+  "version": "1.0.0",
+  "description": "ClassLink Educational App — Grades 1-8 | Chemistry, Physics, History, Social Studies",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:backend": "npm run dev --workspace=backend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:backend": "npm run build --workspace=backend"
+  }
+}
