@@ -73,7 +73,7 @@ const frontendDist = [
 if (fs.existsSync(frontendDist)) {
   app.use(express.static(frontendDist));
   // SPA fallback — all non-API routes serve index.html
-  app.get('*', (req, res) => {
+  app.get('/{*path}', (req, res) => {
     if (req.path.startsWith('/auth') || req.path.startsWith('/progress') ||
         req.path.startsWith('/diagnostic') || req.path.startsWith('/lessons') ||
         req.path.startsWith('/session') || req.path === '/health') {
