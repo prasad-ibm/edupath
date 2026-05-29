@@ -1,17 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
-import { config } from '../config/env';
-
-if (!config.supabase.url || !config.supabase.serviceRoleKey) {
-  console.warn('WARNING: Supabase credentials not set. DB operations will fail.');
-}
-
-export const supabase = createClient(
-  config.supabase.url,
-  config.supabase.serviceRoleKey,
-  {
-    auth: {
-      autoRefreshToken: false,
-      persistSession: false,
-    },
-  }
-);
+// This file is intentionally empty.
+// Supabase has been replaced with Railway PostgreSQL.
+// See src/db/pool.ts for the database connection.
+export {};

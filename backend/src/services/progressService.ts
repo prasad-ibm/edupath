@@ -1,4 +1,4 @@
-import { supabase } from '../db/supabaseClient';
+import { query, queryOne } from '../db/pool';
 
 export type LessonStatus = 'not_started' | 'in_progress' | 'passed' | 'failed';
 
@@ -15,21 +15,25 @@ export async function getLearningPath(
   grade: number,
   subject: string
 ): Promise<LessonProgress[]> {
-  const { data, error } = await supabase
-    .from('lesson_progress')
-    .select('lesson_id, status, attempts, last_score, completed_at')
-    .eq('user_id', userId)
-    .eq('grade', grade)
-    .eq('subject', subject)
-    .order('lesson_id');
-
-  if (error) throw error;
-  return (data || []).map((row) => ({
-    lessonId: row.lesson_id,
-    status: row.status as LessonStatus,
-    attempts: row.attempts,
-    lastScore: row.last_score,
-    completedAt: row.completed_at,
+  const rows = await query<{
+    lesson_id: string;
+    status: string;
+    attempts: number;
+    last_score: string | null;
+    completed_at: string | null;
+  }>(
+    `SELECT lesson_id, status, attempts, last_score, completed_at
+     FROM lesson_progress
+     WHERE user_id = $1 AND grade = $2 AND subject = $3
+     ORDER BY lesson_id`,
+    [userId, grade, subject]
+  );
+  return rows.map((r) => ({
+    lessonId: r.lesson_id,
+    status: r.status as LessonStatus,
+    attempts: r.attempts,
+    lastScore: r.last_score !== null ? parseFloat(r.last_score) : null,
+    completedAt: r.completed_at,
   }));
 }
 
@@ -41,35 +45,17 @@ export async function upsertLessonProgress(
   status: LessonStatus,
   score?: number
 ): Promise<void> {
-  const { error } = await supabase.from('lesson_progress').upsert(
-    {
-      user_id: userId,
-      grade,
-      subject,
-      lesson_id: lessonId,
-      status,
-      last_score: score ?? null,
-      completed_at: status === 'passed' ? new Date().toISOString() : null,
-      updated_at: new Date().toISOString(),
-      attempts: status === 'in_progress' ? undefined : undefined, // handled by increment below
-    },
-    { onConflict: 'user_id,grade,subject,lesson_id' }
+  await query(
+    `INSERT INTO lesson_progress (user_id, grade, subject, lesson_id, status, last_score, attempts, completed_at, updated_at)
+     VALUES ($1, $2, $3, $4, $5, $6, 1, $7, NOW())
+     ON CONFLICT (user_id, grade, subject, lesson_id) DO UPDATE SET
+       status      = EXCLUDED.status,
+       last_score  = COALESCE(EXCLUDED.last_score, lesson_progress.last_score),
+       attempts    = lesson_progress.attempts + 1,
+       completed_at = CASE WHEN EXCLUDED.status = 'passed' THEN NOW() ELSE lesson_progress.completed_at END,
+       updated_at  = NOW()`,
+    [userId, grade, subject, lessonId, status, score ?? null, status === 'passed' ? new Date().toISOString() : null]
   );
-  if (error) throw error;
-}
-
-export async function incrementAttempts(
-  userId: string,
-  grade: number,
-  subject: string,
-  lessonId: string
-): Promise<void> {
-  await supabase.rpc('increment_attempts', {
-    p_user_id: userId,
-    p_grade: grade,
-    p_subject: subject,
-    p_lesson_id: lessonId,
-  });
 }
 
 export async function saveAssessmentResult(
@@ -82,15 +68,9 @@ export async function saveAssessmentResult(
   passed: boolean,
   attemptNumber: number
 ): Promise<void> {
-  const { error } = await supabase.from('assessment_results').insert({
-    user_id: userId,
-    lesson_id: lessonId,
-    grade,
-    subject,
-    attempt_number: attemptNumber,
-    answers,
-    score,
-    passed,
-  });
-  if (error) throw error;
+  await query(
+    `INSERT INTO assessment_results (user_id, lesson_id, grade, subject, attempt_number, answers, score, passed)
+     VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+    [userId, lessonId, grade, subject, attemptNumber, JSON.stringify(answers), score, passed]
+  );
 }

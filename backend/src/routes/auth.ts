@@ -2,7 +2,7 @@ import { Router, Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { randomUUID } from 'crypto';
 import { config } from '../config/env';
-import { supabase } from '../db/supabaseClient';
+import { query, queryOne } from '../db/pool';
 import { authenticate, AuthRequest } from '../middleware/authenticate';
 
 const router = Router();
@@ -10,7 +10,7 @@ const router = Router();
 /**
  * POST /auth/login
  * Simple login — accepts displayName + grade, returns a JWT.
- * No external provider needed. ClassLink SSO can be wired in later.
+ * ClassLink SSO can be wired in later for school deployment.
  */
 router.post('/login', async (req: Request, res: Response) => {
   const { displayName, grade } = req.body as { displayName: string; grade: number };
@@ -20,30 +20,33 @@ router.post('/login', async (req: Request, res: Response) => {
     return;
   }
 
-  // Generate a stable ID based on displayName (so the same name always gets the same user)
   const stableId = `local_${displayName.toLowerCase().replace(/\s+/g, '_')}`;
-  let userId = randomUUID();
+  let userId: string = randomUUID();
 
-  // Try to upsert user in DB (optional — works without Supabase too)
+  // Upsert user in DB (gracefully skips if DB not configured)
   try {
-    const { data } = await supabase
-      .from('users')
-      .upsert(
-        {
-          classlink_id: stableId,
-          display_name: displayName,
-          grade,
-          updated_at: new Date().toISOString(),
-        },
-        { onConflict: 'classlink_id' }
-      )
-      .select('id')
-      .single();
+    const existing = await queryOne<{ id: string }>(
+      `SELECT id FROM users WHERE classlink_id = $1`,
+      [stableId]
+    );
 
-    if (data?.id) userId = data.id;
+    if (existing) {
+      userId = existing.id;
+      await query(
+        `UPDATE users SET display_name = $1, grade = $2, updated_at = NOW() WHERE id = $3`,
+        [displayName, grade, userId]
+      );
+    } else {
+      const inserted = await queryOne<{ id: string }>(
+        `INSERT INTO users (classlink_id, display_name, grade)
+         VALUES ($1, $2, $3)
+         RETURNING id`,
+        [stableId, displayName, grade]
+      );
+      if (inserted) userId = inserted.id;
+    }
   } catch {
-    // DB not configured yet — use generated UUID (progress won't persist)
-    console.warn('[Auth] Supabase not configured — progress will not be saved.');
+    console.warn('[Auth] DB not available — progress will not be saved.');
   }
 
   const token = jwt.sign(

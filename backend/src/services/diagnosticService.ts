@@ -1,4 +1,4 @@
-import { supabase } from '../db/supabaseClient';
+import { query, queryOne } from '../db/pool';
 
 export interface DiagnosticAnswer {
   questionId: string;
@@ -11,14 +11,9 @@ export interface DiagnosticResult {
   score: number;
 }
 
-/**
- * Server-authoritative placement computation.
- * Returns the lesson index the student should start from.
- */
 export function computePlacement(answers: DiagnosticAnswer[]): DiagnosticResult {
   if (answers.length === 0) return { placementIndex: 0, score: 0 };
 
-  // Group by difficulty
   const byDifficulty: Record<number, { correct: number; total: number }> = {};
   for (const a of answers) {
     if (!byDifficulty[a.difficulty]) byDifficulty[a.difficulty] = { correct: 0, total: 0 };
@@ -26,67 +21,47 @@ export function computePlacement(answers: DiagnosticAnswer[]): DiagnosticResult 
     if (a.correct) byDifficulty[a.difficulty].correct++;
   }
 
-  // Find highest difficulty where student scored >= 70%
   let masteredDifficulty = 0;
   for (const [diff, stats] of Object.entries(byDifficulty)) {
-    const rate = stats.correct / stats.total;
-    if (rate >= 0.7 && parseInt(diff) > masteredDifficulty) {
+    if (stats.correct / stats.total >= 0.7 && parseInt(diff) > masteredDifficulty) {
       masteredDifficulty = parseInt(diff);
     }
   }
 
-  // Map difficulty to lesson start index
-  // difficulty 0 (failed all) → start from 0
-  // difficulty 1 → start from 0
-  // difficulty 2 → start from 3
-  // difficulty 3 → start from 6
   const placementMap: Record<number, number> = { 0: 0, 1: 0, 2: 3, 3: 6 };
   const placementIndex = placementMap[masteredDifficulty] ?? 0;
-
   const totalCorrect = answers.filter((a) => a.correct).length;
   const score = Math.round((totalCorrect / answers.length) * 100);
 
   return { placementIndex, score };
 }
 
-/**
- * Save diagnostic result to DB (upsert — one per user/grade/subject)
- */
 export async function saveDiagnosticResult(
   userId: string,
   grade: number,
   subject: string,
   placementIndex: number
 ): Promise<void> {
-  const { error } = await supabase.from('diagnostic_results').upsert(
-    {
-      user_id: userId,
-      grade,
-      subject,
-      placement_index: placementIndex,
-      completed_at: new Date().toISOString(),
-    },
-    { onConflict: 'user_id,grade,subject' }
+  await query(
+    `INSERT INTO diagnostic_results (user_id, grade, subject, placement_index, completed_at)
+     VALUES ($1, $2, $3, $4, NOW())
+     ON CONFLICT (user_id, grade, subject) DO UPDATE SET
+       placement_index = EXCLUDED.placement_index,
+       completed_at    = NOW()`,
+    [userId, grade, subject, placementIndex]
   );
-  if (error) throw error;
 }
 
-/**
- * Get existing diagnostic result if already taken
- */
 export async function getDiagnosticResult(
   userId: string,
   grade: number,
   subject: string
 ): Promise<{ placementIndex: number } | null> {
-  const { data, error } = await supabase
-    .from('diagnostic_results')
-    .select('placement_index')
-    .eq('user_id', userId)
-    .eq('grade', grade)
-    .eq('subject', subject)
-    .single();
-
-  if (error || !data) return null;
-  return { placementIndex: data.placement_index };
+  const row = await queryOne<{ placement_index: number }>(
+    `SELECT placement_index FROM diagnostic_results
+     WHERE user_id = $1 AND grade = $2 AND subject = $3`,
+    [userId, grade, subject]
+  );
+  if (!row) return null;
+  return { placementIndex: row.placement_index };
 }

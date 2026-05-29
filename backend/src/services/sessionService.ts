@@ -1,4 +1,4 @@
-import { supabase } from '../db/supabaseClient';
+import { query, queryOne } from '../db/pool';
 
 export type LessonStep = 'content' | 'experiment' | 'practice' | 'reading' | 'comprehension' | 'assessment';
 
@@ -17,19 +17,16 @@ export async function saveSession(
   step: LessonStep,
   stepData: Record<string, unknown>
 ): Promise<void> {
-  const { error } = await supabase.from('session_state').upsert(
-    {
-      user_id: userId,
-      grade,
-      subject,
-      lesson_id: lessonId,
-      step,
-      step_data: stepData,
-      saved_at: new Date().toISOString(),
-    },
-    { onConflict: 'user_id,grade,subject' }
+  await query(
+    `INSERT INTO session_state (user_id, grade, subject, lesson_id, step, step_data, saved_at)
+     VALUES ($1, $2, $3, $4, $5, $6, NOW())
+     ON CONFLICT (user_id, grade, subject) DO UPDATE SET
+       lesson_id = EXCLUDED.lesson_id,
+       step      = EXCLUDED.step,
+       step_data = EXCLUDED.step_data,
+       saved_at  = NOW()`,
+    [userId, grade, subject, lessonId, step, JSON.stringify(stepData)]
   );
-  if (error) throw error;
 }
 
 export async function resumeSession(
@@ -37,20 +34,23 @@ export async function resumeSession(
   grade: number,
   subject: string
 ): Promise<SessionState | null> {
-  const { data, error } = await supabase
-    .from('session_state')
-    .select('lesson_id, step, step_data, saved_at')
-    .eq('user_id', userId)
-    .eq('grade', grade)
-    .eq('subject', subject)
-    .single();
-
-  if (error || !data) return null;
+  const row = await queryOne<{
+    lesson_id: string;
+    step: string;
+    step_data: Record<string, unknown>;
+    saved_at: string;
+  }>(
+    `SELECT lesson_id, step, step_data, saved_at
+     FROM session_state
+     WHERE user_id = $1 AND grade = $2 AND subject = $3`,
+    [userId, grade, subject]
+  );
+  if (!row) return null;
   return {
-    lessonId: data.lesson_id,
-    step: data.step as LessonStep,
-    stepData: data.step_data || {},
-    savedAt: data.saved_at,
+    lessonId: row.lesson_id,
+    step: row.step as LessonStep,
+    stepData: row.step_data || {},
+    savedAt: row.saved_at,
   };
 }
 
@@ -59,10 +59,8 @@ export async function clearSession(
   grade: number,
   subject: string
 ): Promise<void> {
-  await supabase
-    .from('session_state')
-    .delete()
-    .eq('user_id', userId)
-    .eq('grade', grade)
-    .eq('subject', subject);
+  await query(
+    `DELETE FROM session_state WHERE user_id = $1 AND grade = $2 AND subject = $3`,
+    [userId, grade, subject]
+  );
 }
