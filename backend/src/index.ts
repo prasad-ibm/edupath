@@ -47,6 +47,20 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok', timestamp: new Date().toISOString() });
 });
 
+// ─── Debug (temporary — remove after deployment verified) ───────────────────
+app.get('/debug-paths', (_req, res) => {
+  const candidates = [
+    path.join(__dirname, '../../frontend/dist'),
+    path.join(__dirname, '../../../frontend/dist'),
+    path.join(process.cwd(), 'frontend/dist'),
+  ];
+  res.json({
+    __dirname,
+    cwd: process.cwd(),
+    candidates: candidates.map(p => ({ path: p, exists: fs.existsSync(p) })),
+  });
+});
+
 // ─── Serve Frontend (production) ─────────────────────────────────────────────
 // In production (Railway), the Vite build is at <repo-root>/frontend/dist.
 // __dirname = <repo-root>/backend/dist  →  ../../frontend/dist = <repo-root>/frontend/dist
