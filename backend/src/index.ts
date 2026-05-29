@@ -48,9 +48,14 @@ app.get('/health', (_req, res) => {
 });
 
 // ─── Serve Frontend (production) ─────────────────────────────────────────────
-// In production (Railway), the Vite build is copied next to the backend dist.
-// In development, Vite runs separately on port 5174.
-const frontendDist = path.join(__dirname, '../../frontend/dist');
+// In production (Railway), the Vite build is at <repo-root>/frontend/dist.
+// __dirname = <repo-root>/backend/dist  →  ../../frontend/dist = <repo-root>/frontend/dist
+// Fallback: also check one level up in case the service root is the repo root.
+const frontendDist = [
+  path.join(__dirname, '../../frontend/dist'),      // normal: backend/dist → repo root
+  path.join(__dirname, '../../../frontend/dist'),   // if nested one extra level
+  path.join(process.cwd(), 'frontend/dist'),        // cwd-relative (most reliable on Railway)
+].find(p => fs.existsSync(p)) ?? path.join(__dirname, '../../frontend/dist');
 if (fs.existsSync(frontendDist)) {
   app.use(express.static(frontendDist));
   // SPA fallback — all non-API routes serve index.html
