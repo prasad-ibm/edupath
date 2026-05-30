@@ -1,0 +1,127 @@
+{
+  "id": "chemistry_g1_l03",
+  "title": "Chemical Reactions — Things That Change",
+  "grade": 1,
+  "subject": "chemistry",
+  "content": {
+    "text": "Sometimes when two materials mix together, something brand new is created! This is called a chemical reaction.\n\nA chemical reaction is different from just mixing — the materials actually change into something new. You cannot easily undo it.\n\n🌋 Baking Soda + Vinegar — Mix these together and you get a big fizz! Bubbles of carbon dioxide gas are created. This is a chemical reaction.\n\n🍞 Baking Bread — When bread bakes in the oven, the dough changes and becomes fluffy bread. You cannot turn the bread back into dough!\n\n🍎 A Cut Apple Turning Brown — When you cut an apple and leave it out, it slowly turns brown. That is a slow chemical reaction with the air.\n\n🕯️ A Burning Candle — The wax burns and turns into light, heat, and gases. This is also a chemical reaction.\n\nHow do you know a chemical reaction happened? Look for these clues:\n✅ Bubbles or fizzing\n✅ Color change\n✅ Heat or light produced\n✅ A new smell\n✅ Cannot be easily reversed\n\nNot all mixing is a reaction! Stirring sugar into water is just dissolving — no new material is created. But mixing baking soda and vinegar creates a brand new gas!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/chemical_reaction.svg",
+        "alt": "Diagram showing baking soda and vinegar reaction with bubbles"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Drag the baking soda into the vinegar and watch the chemical reaction!",
+    "ingredients": [
+      { "id": "baking_soda", "label": "Baking Soda", "icon": "" },
+      { "id": "vinegar", "label": "Vinegar", "icon": "" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["baking_soda", "vinegar"],
+        "animationKey": "bubbling_reaction",
+        "resultLabel": "A chemical reaction! The baking soda and vinegar create carbon dioxide gas — that is what makes all those bubbles and fizzing!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_chem_g1_l03_01",
+      "prompt": "What is a chemical reaction?",
+      "options": [
+        { "id": "a", "text": "When you stir two liquids together gently" },
+        { "id": "b", "text": "When materials change and create something new" },
+        { "id": "c", "text": "When ice melts into water" },
+        { "id": "d", "text": "When sugar dissolves in water" }
+      ],
+      "correctId": "b",
+      "hint": "Think about what happened when baking soda and vinegar mixed — something new was created!"
+    },
+    {
+      "id": "pq_chem_g1_l03_02",
+      "prompt": "Which of these is a sign that a chemical reaction happened?",
+      "options": [
+        { "id": "a", "text": "The material stays the same color" },
+        { "id": "b", "text": "Nothing changes" },
+        { "id": "c", "text": "Bubbles and fizzing appear" },
+        { "id": "d", "text": "The material dissolves quietly" }
+      ],
+      "correctId": "c",
+      "hint": "Remember the baking soda and vinegar experiment — what did you see?"
+    },
+    {
+      "id": "pq_chem_g1_l03_03",
+      "prompt": "When baking soda and vinegar are mixed, what gas is produced?",
+      "options": [
+        { "id": "a", "text": "Oxygen" },
+        { "id": "b", "text": "Carbon dioxide" },
+        { "id": "c", "text": "Steam" },
+        { "id": "d", "text": "Nitrogen" }
+      ],
+      "correctId": "b",
+      "hint": "This is the same gas that makes soda drinks fizzy!"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_chem_g1_l03_01",
+        "prompt": "Which of these is an example of a chemical reaction?",
+        "options": [
+          { "id": "a", "text": "Stirring sugar into water" },
+          { "id": "b", "text": "Ice melting in a glass" },
+          { "id": "c", "text": "Baking soda and vinegar fizzing together" },
+          { "id": "d", "text": "Sand sinking in water" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l03_02",
+        "prompt": "How is a chemical reaction different from just mixing?",
+        "options": [
+          { "id": "a", "text": "A chemical reaction is always cold" },
+          { "id": "b", "text": "A chemical reaction creates a new material" },
+          { "id": "c", "text": "Mixing always produces bubbles" },
+          { "id": "d", "text": "There is no difference" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l03_03",
+        "prompt": "A cut apple turning brown is an example of what?",
+        "options": [
+          { "id": "a", "text": "The apple dissolving" },
+          { "id": "b", "text": "A physical change only" },
+          { "id": "c", "text": "A slow chemical reaction with air" },
+          { "id": "d", "text": "The apple freezing" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l03_04",
+        "prompt": "Which of these is NOT a sign of a chemical reaction?",
+        "options": [
+          { "id": "a", "text": "A color change" },
+          { "id": "b", "text": "Bubbles forming" },
+          { "id": "c", "text": "A new smell appearing" },
+          { "id": "d", "text": "Sugar quietly dissolving in water" }
+        ],
+        "correctId": "d"
+      },
+      {
+        "id": "fa_chem_g1_l03_05",
+        "prompt": "Can a chemical reaction usually be undone?",
+        "options": [
+          { "id": "a", "text": "Yes, always easily" },
+          { "id": "b", "text": "No, it is usually very hard or impossible to undo" },
+          { "id": "c", "text": "Only if you add water" },
+          { "id": "d", "text": "Only if you cool it down" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

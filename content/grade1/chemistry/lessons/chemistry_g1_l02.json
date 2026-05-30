@@ -1,0 +1,133 @@
+{
+  "id": "chemistry_g1_l02",
+  "title": "Mixing and Dissolving",
+  "grade": 1,
+  "subject": "chemistry",
+  "content": {
+    "text": "Have you ever stirred sugar into lemonade and watched it disappear? That is called dissolving!\n\nWhen one material mixes completely into a liquid and you can no longer see it, we say it dissolved. The liquid that does the dissolving is called a solvent. Water is the most common solvent on Earth.\n\n🍬 Sugar dissolves in water — it seems to vanish, but it is still there! You can taste it.\n\n🧂 Salt also dissolves in water — stir it in and it disappears into the water.\n\n🪨 Sand does NOT dissolve in water — it sinks to the bottom. You can still see it.\n\n🛢️ Oil does NOT dissolve in water — it floats on top and stays separated.\n\nWhen something dissolves, it forms a mixture called a solution. Seawater is a solution of salt dissolved in water. When something does NOT dissolve, the pieces stay separate — like sand in water.\n\nRemember: just because you can no longer see something does not mean it is gone — it is still in the water!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/dissolving.svg",
+        "alt": "Diagram showing sugar dissolving in water vs sand not dissolving"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Drag the sugar cube into the glass of water and see what happens!",
+    "ingredients": [
+      { "id": "sugar_cube", "label": "Sugar Cube", "icon": "" },
+      { "id": "water_glass", "label": "Glass of Water", "icon": "" },
+      { "id": "sand", "label": "Sand", "icon": "" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["sugar_cube", "water_glass"],
+        "animationKey": "dissolving",
+        "resultLabel": "The sugar dissolved! It mixed completely into the water. The water is now sweet, even though you cannot see the sugar."
+      },
+      {
+        "requiredItems": ["sand", "water_glass"],
+        "animationKey": "not_dissolving",
+        "resultLabel": "The sand did not dissolve! It sinks to the bottom and stays separate from the water."
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_chem_g1_l02_01",
+      "prompt": "What does it mean when sugar 'dissolves' in water?",
+      "options": [
+        { "id": "a", "text": "The sugar disappears forever" },
+        { "id": "b", "text": "The sugar mixes completely into the water" },
+        { "id": "c", "text": "The sugar turns into ice" },
+        { "id": "d", "text": "The water becomes solid" }
+      ],
+      "correctId": "b",
+      "hint": "Think about what happened when you stirred sugar into the water in the experiment."
+    },
+    {
+      "id": "pq_chem_g1_l02_02",
+      "prompt": "Which of these will dissolve in water?",
+      "options": [
+        { "id": "a", "text": "Sand" },
+        { "id": "b", "text": "Rocks" },
+        { "id": "c", "text": "Salt" },
+        { "id": "d", "text": "Oil" }
+      ],
+      "correctId": "c",
+      "hint": "Think about which material you cannot see after mixing it into water."
+    },
+    {
+      "id": "pq_chem_g1_l02_03",
+      "prompt": "What is a solution?",
+      "options": [
+        { "id": "a", "text": "A mixture where one material dissolves into another" },
+        { "id": "b", "text": "A type of solid that cannot melt" },
+        { "id": "c", "text": "A liquid that does not mix with anything" },
+        { "id": "d", "text": "A gas that rises in the air" }
+      ],
+      "correctId": "a",
+      "hint": "Seawater is an example — salt dissolved in water."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_chem_g1_l02_01",
+        "prompt": "When salt dissolves in water, where does the salt go?",
+        "options": [
+          { "id": "a", "text": "It disappears completely and is gone forever" },
+          { "id": "b", "text": "It stays mixed in the water — you just cannot see it" },
+          { "id": "c", "text": "It floats on top of the water" },
+          { "id": "d", "text": "It turns into a gas" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l02_02",
+        "prompt": "Which of the following does NOT dissolve in water?",
+        "options": [
+          { "id": "a", "text": "Sugar" },
+          { "id": "b", "text": "Salt" },
+          { "id": "c", "text": "Sand" },
+          { "id": "d", "text": "Baking soda" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l02_03",
+        "prompt": "What is the liquid that dissolves other materials called?",
+        "options": [
+          { "id": "a", "text": "A solution" },
+          { "id": "b", "text": "A solvent" },
+          { "id": "c", "text": "A solid" },
+          { "id": "d", "text": "A mixture" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l02_04",
+        "prompt": "Seawater is an example of what?",
+        "options": [
+          { "id": "a", "text": "Sand mixed with oil" },
+          { "id": "b", "text": "A solution of salt dissolved in water" },
+          { "id": "c", "text": "Pure water with no other materials" },
+          { "id": "d", "text": "Frozen water with salt on top" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l02_05",
+        "prompt": "What happens when you mix oil and water?",
+        "options": [
+          { "id": "a", "text": "The oil dissolves into the water" },
+          { "id": "b", "text": "The water turns yellow" },
+          { "id": "c", "text": "They stay separated — oil floats on top" },
+          { "id": "d", "text": "They both evaporate" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}
