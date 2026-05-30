@@ -1,0 +1,129 @@
+{
+  "id": "history_g1_l02",
+  "title": "Families Then and Now",
+  "grade": 1,
+  "subject": "history",
+  "content": {
+    "text": "Families have always been at the heart of every community. But the way families live has changed a lot over time!\n\n👨‍👩‍👧‍👦 Long ago, families were often very large. Many relatives — grandparents, aunts, uncles, and cousins — lived close together or even in the same house. This was called an extended family.\n\n🏡 Families long ago:\n• Grew or caught their own food\n• Made their own clothes by hand\n• Had no electricity, so they used candles for light\n• Washed clothes by hand in a river or with a washboard\n• Children helped with chores from a very young age\n\n💡 Families today:\n• Buy food from grocery stores\n• Buy clothes from shops or online\n• Use electricity for lights, refrigerators, and washing machines\n• Watch television and use the internet\n• Children go to school to learn reading, writing, and math\n\nEven though daily life looks different, families then and now share the same important things: love, caring for each other, sharing meals, and telling stories.\n\nFamily traditions — special things families do together — are another way the past stays alive today.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/family_then_now.svg",
+        "alt": "Illustration comparing a family from the past with a family today"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "Layla's Great-Great-Grandmother",
+    "text": "Layla loved visiting her grandmother, Nana Rose. One afternoon, Nana Rose pulled out a wooden box filled with old photographs.\n\n\"Who is this?\" Layla asked, pointing to a woman in a long dress standing in a field.\n\n\"That is your great-great-grandmother, Amara,\" said Nana Rose. \"She lived over 100 years ago on a farm.\"\n\nIn the photo, Amara stood next to a large garden. Behind her was a small wooden house with a well nearby.\n\n\"She had ten children,\" Nana Rose said. \"And they all worked together every day — planting vegetables, feeding animals, and cooking meals over a fire.\"\n\nLayla tried to imagine her own family doing all that work. \"Did they have a refrigerator?\" she asked.\n\n\"No refrigerators, no electricity, no running water,\" Nana Rose said with a smile. \"But they had something very important — they always ate dinner together and helped each other.\"\n\nLayla looked at the photo for a long time. Then she said, \"We still do that. We eat dinner together every night.\"\n\nNana Rose nodded. \"Yes, we do. Some things never change.\""
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_hist_g1_l02_01",
+      "prompt": "How many children did Amara have?",
+      "options": [
+        { "id": "a", "text": "Two" },
+        { "id": "b", "text": "Five" },
+        { "id": "c", "text": "Ten" },
+        { "id": "d", "text": "Seven" }
+      ],
+      "correctId": "c",
+      "hint": "Read the paragraph where Nana Rose describes Amara's family."
+    },
+    {
+      "id": "cq_hist_g1_l02_02",
+      "prompt": "What did Amara's family NOT have?",
+      "options": [
+        { "id": "a", "text": "A garden" },
+        { "id": "b", "text": "Children" },
+        { "id": "c", "text": "A refrigerator" },
+        { "id": "d", "text": "A wooden house" }
+      ],
+      "correctId": "c",
+      "hint": "Nana Rose lists three things they did not have — find them in the passage."
+    },
+    {
+      "id": "cq_hist_g1_l02_03",
+      "prompt": "What does Layla's family still do that is the same as Amara's family?",
+      "options": [
+        { "id": "a", "text": "Farm animals" },
+        { "id": "b", "text": "Eat dinner together" },
+        { "id": "c", "text": "Use candles for light" },
+        { "id": "d", "text": "Wash clothes in a river" }
+      ],
+      "correctId": "b",
+      "hint": "Look at what Layla says near the end of the passage."
+    },
+    {
+      "id": "cq_hist_g1_l02_04",
+      "prompt": "What was in the wooden box that Nana Rose showed Layla?",
+      "options": [
+        { "id": "a", "text": "Toys" },
+        { "id": "b", "text": "Letters" },
+        { "id": "c", "text": "Old photographs" },
+        { "id": "d", "text": "Coins" }
+      ],
+      "correctId": "c",
+      "hint": "Read the very first paragraph of the story carefully."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_hist_g1_l02_01",
+        "prompt": "What is an extended family?",
+        "options": [
+          { "id": "a", "text": "A family with only two people" },
+          { "id": "b", "text": "Many relatives living close together" },
+          { "id": "c", "text": "A family that moved to a new city" },
+          { "id": "d", "text": "A family with no children" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l02_02",
+        "prompt": "Long ago, how did families get their food?",
+        "options": [
+          { "id": "a", "text": "From a grocery store" },
+          { "id": "b", "text": "From a restaurant" },
+          { "id": "c", "text": "By growing or catching it themselves" },
+          { "id": "d", "text": "By ordering it online" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l02_03",
+        "prompt": "What is a family tradition?",
+        "options": [
+          { "id": "a", "text": "A new invention" },
+          { "id": "b", "text": "A special thing families do together that connects them to the past" },
+          { "id": "c", "text": "A type of food families eat" },
+          { "id": "d", "text": "A job that only family members can do" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l02_04",
+        "prompt": "Which of these did families long ago NOT have?",
+        "options": [
+          { "id": "a", "text": "Candles" },
+          { "id": "b", "text": "Gardens" },
+          { "id": "c", "text": "Washing machines" },
+          { "id": "d", "text": "Children" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l02_05",
+        "prompt": "What important thing do both past and present families share?",
+        "options": [
+          { "id": "a", "text": "Television and internet" },
+          { "id": "b", "text": "Love and caring for each other" },
+          { "id": "c", "text": "Electricity" },
+          { "id": "d", "text": "Grocery stores" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

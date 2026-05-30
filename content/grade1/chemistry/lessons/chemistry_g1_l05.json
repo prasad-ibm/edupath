@@ -1,0 +1,127 @@
+{
+  "id": "chemistry_g1_l05",
+  "title": "Heating and Cooling",
+  "grade": 1,
+  "subject": "chemistry",
+  "content": {
+    "text": "Heat changes materials! When we heat something up or cool it down, amazing things can happen.\n\n🔥 Heating makes things change:\n• Ice → Water (melting)\n• Water → Steam (evaporating)\n• Bread dough → Bread (baking — this one can't go back!)\n• Butter → Melted butter (melting)\n\n❄️ Cooling makes things change:\n• Water → Ice (freezing)\n• Steam → Water (condensing)\n• Melted chocolate → Solid chocolate (solidifying)\n\n↩️ Reversible vs Irreversible Changes:\nSome changes can be undone — ice melts to water, and water can freeze back to ice. These are REVERSIBLE changes.\n\nSome changes cannot be undone — once you bake a cake or burn wood, you cannot get the original material back. These are IRREVERSIBLE changes.\n\nTemperature is how hot or cold something is. We measure temperature with a thermometer. Water freezes at 0°C (32°F) and boils at 100°C (212°F).\n\nKnowing about heating and cooling helps us cook food, make ice cream, and keep our homes warm!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/heating_cooling.svg",
+        "alt": "Diagram showing reversible and irreversible changes with heat"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Heat the butter by dragging it onto the hot pan! Watch what happens when heat is applied.",
+    "ingredients": [
+      { "id": "butter", "label": "Butter (solid)", "icon": "🧈" },
+      { "id": "hot_pan", "label": "Hot Pan", "icon": "🍳" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["butter", "hot_pan"],
+        "animationKey": "melting",
+        "resultLabel": "The solid butter melts into liquid! Heat causes the butter to change from solid to liquid. This is a reversible change — cool it down and it becomes solid again!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_chem_g1_l05_01",
+      "prompt": "What happens to water when it is cooled to 0°C?",
+      "options": [
+        { "id": "a", "text": "It evaporates" },
+        { "id": "b", "text": "It freezes into ice" },
+        { "id": "c", "text": "It becomes steam" },
+        { "id": "d", "text": "It changes color" }
+      ],
+      "correctId": "b",
+      "hint": "Think about how ice forms in a freezer — what does cold do to water?"
+    },
+    {
+      "id": "pq_chem_g1_l05_02",
+      "prompt": "Which of these is an IRREVERSIBLE change?",
+      "options": [
+        { "id": "a", "text": "Ice melting into water" },
+        { "id": "b", "text": "Butter melting on toast" },
+        { "id": "c", "text": "Baking a birthday cake" },
+        { "id": "d", "text": "Water freezing into ice" }
+      ],
+      "correctId": "c",
+      "hint": "An irreversible change cannot be undone. Can you turn a baked cake back into raw batter?"
+    },
+    {
+      "id": "pq_chem_g1_l05_03",
+      "prompt": "What instrument do we use to measure temperature?",
+      "options": [
+        { "id": "a", "text": "Ruler" },
+        { "id": "b", "text": "Scale" },
+        { "id": "c", "text": "Thermometer" },
+        { "id": "d", "text": "Magnifying glass" }
+      ],
+      "correctId": "c",
+      "hint": "Think about the tool a doctor uses to check if you have a fever."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_chem_g1_l05_01",
+        "prompt": "When water turns to steam, this is called:",
+        "options": [
+          { "id": "a", "text": "Freezing" },
+          { "id": "b", "text": "Condensing" },
+          { "id": "c", "text": "Evaporating" },
+          { "id": "d", "text": "Dissolving" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l05_02",
+        "prompt": "Which change is REVERSIBLE?",
+        "options": [
+          { "id": "a", "text": "Burning wood" },
+          { "id": "b", "text": "Baking bread" },
+          { "id": "c", "text": "Melting ice cream" },
+          { "id": "d", "text": "Cooking an egg" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l05_03",
+        "prompt": "At what temperature does water freeze?",
+        "options": [
+          { "id": "a", "text": "100°C" },
+          { "id": "b", "text": "50°C" },
+          { "id": "c", "text": "0°C" },
+          { "id": "d", "text": "25°C" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l05_04",
+        "prompt": "What happens when steam is cooled?",
+        "options": [
+          { "id": "a", "text": "It turns into ice" },
+          { "id": "b", "text": "It turns back into water" },
+          { "id": "c", "text": "It disappears forever" },
+          { "id": "d", "text": "It becomes a solid" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l05_05",
+        "prompt": "Why is baking a cake an irreversible change?",
+        "options": [
+          { "id": "a", "text": "Because cakes are delicious" },
+          { "id": "b", "text": "Because the ingredients get hot" },
+          { "id": "c", "text": "Because you cannot turn the baked cake back into raw batter" },
+          { "id": "d", "text": "Because ovens use electricity" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

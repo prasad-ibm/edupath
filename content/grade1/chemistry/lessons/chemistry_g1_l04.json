@@ -1,0 +1,127 @@
+{
+  "id": "chemistry_g1_l04",
+  "title": "Properties of Materials",
+  "grade": 1,
+  "subject": "chemistry",
+  "content": {
+    "text": "Everything around you is made of a material. Materials are the stuff things are made from — wood, metal, plastic, glass, rubber, and fabric are all materials.\n\nEach material has special properties — properties are words we use to describe what something is like:\n\n🪨 Hard or Soft — A rock is hard. A pillow is soft.\n🔊 Rough or Smooth — Sandpaper is rough. Ice is smooth.\n💧 Waterproof or Absorbent — A raincoat is waterproof (water slides off). A sponge is absorbent (it soaks up water).\n🔍 Transparent or Opaque — Glass is transparent (you can see through it). A wooden door is opaque (you cannot see through it).\n⚡ Conductor or Insulator — Metal conducts electricity (lets it flow through). Rubber insulates (blocks electricity).\n\nScientists choose materials based on their properties. A cup is made of glass or plastic because it is waterproof. A sweater is made of wool because it is soft and warm.\n\nKnowing about material properties helps us build better things and stay safe!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/materials.svg",
+        "alt": "Chart showing different materials and their properties"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Test which material is waterproof! Drag each material into the water bowl and see what happens.",
+    "ingredients": [
+      { "id": "raincoat", "label": "Raincoat (plastic)", "icon": "" },
+      { "id": "sponge", "label": "Sponge (fabric)", "icon": "" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["raincoat", "sponge"],
+        "animationKey": "dissolving",
+        "resultLabel": "The raincoat repels water — it's waterproof! The sponge soaks it all up — it's absorbent! Different materials have very different properties."
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_chem_g1_l04_01",
+      "prompt": "Which word describes a material that water slides off of?",
+      "options": [
+        { "id": "a", "text": "Absorbent" },
+        { "id": "b", "text": "Waterproof" },
+        { "id": "c", "text": "Transparent" },
+        { "id": "d", "text": "Rough" }
+      ],
+      "correctId": "b",
+      "hint": "Think about a raincoat — does water soak in or slide off?"
+    },
+    {
+      "id": "pq_chem_g1_l04_02",
+      "prompt": "Which material would be best for making a window?",
+      "options": [
+        { "id": "a", "text": "Wood" },
+        { "id": "b", "text": "Metal" },
+        { "id": "c", "text": "Glass" },
+        { "id": "d", "text": "Rubber" }
+      ],
+      "correctId": "c",
+      "hint": "A window needs to let light through — which material is transparent?"
+    },
+    {
+      "id": "pq_chem_g1_l04_03",
+      "prompt": "What does 'absorbent' mean?",
+      "options": [
+        { "id": "a", "text": "Lets electricity flow through" },
+        { "id": "b", "text": "Cannot be broken" },
+        { "id": "c", "text": "Soaks up liquid" },
+        { "id": "d", "text": "Bounces back" }
+      ],
+      "correctId": "c",
+      "hint": "Think about what a sponge or paper towel does to a spill."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_chem_g1_l04_01",
+        "prompt": "A material that you can see through is called:",
+        "options": [
+          { "id": "a", "text": "Opaque" },
+          { "id": "b", "text": "Transparent" },
+          { "id": "c", "text": "Absorbent" },
+          { "id": "d", "text": "Rough" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l04_02",
+        "prompt": "Which material would be WORST for making an umbrella?",
+        "options": [
+          { "id": "a", "text": "Plastic" },
+          { "id": "b", "text": "Rubber" },
+          { "id": "c", "text": "Cotton fabric" },
+          { "id": "d", "text": "Nylon" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l04_03",
+        "prompt": "What property describes whether something feels rough or smooth?",
+        "options": [
+          { "id": "a", "text": "Texture" },
+          { "id": "b", "text": "Color" },
+          { "id": "c", "text": "Weight" },
+          { "id": "d", "text": "Size" }
+        ],
+        "correctId": "a"
+      },
+      {
+        "id": "fa_chem_g1_l04_04",
+        "prompt": "Why are electrical wires covered in rubber?",
+        "options": [
+          { "id": "a", "text": "Because rubber is colorful" },
+          { "id": "b", "text": "Because rubber conducts electricity" },
+          { "id": "c", "text": "Because rubber insulates and blocks electricity" },
+          { "id": "d", "text": "Because rubber is waterproof" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l04_05",
+        "prompt": "Which of these correctly describes a rock?",
+        "options": [
+          { "id": "a", "text": "Soft and absorbent" },
+          { "id": "b", "text": "Hard and opaque" },
+          { "id": "c", "text": "Transparent and smooth" },
+          { "id": "d", "text": "Flexible and light" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

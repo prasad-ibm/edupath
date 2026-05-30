@@ -1,0 +1,129 @@
+{
+  "id": "social_studies_g1_l05",
+  "title": "People and Their Jobs",
+  "grade": 1,
+  "subject": "social_studies",
+  "content": {
+    "text": "Everyone in a community has a role to play — and many people have JOBS that help others!\n\n🏥 Community Helpers — Jobs that serve everyone:\n• 👩‍⚕️ Doctors and nurses — keep people healthy\n• 👨‍🚒 Firefighters — put out fires and rescue people\n• 👮 Police officers — keep people safe and enforce laws\n• 🧑‍🏫 Teachers — help children learn and grow\n• 🚚 Mail carriers — deliver letters and packages\n• 🏗️ Construction workers — build homes, roads, and schools\n\n🌾 Producers and Workers:\nPeople who make goods (things you can touch) are called PRODUCERS:\n• Farmers grow food\n• Factory workers make products like cars and toys\n• Bakers make bread and pastries\n\n🛒 People who provide services (things they do for others) include:\n• Doctors, teachers, drivers, and repair workers\n\n💵 How Jobs Work:\nPeople do jobs to earn money (wages or salary). They use that money to buy goods and services they need. This is called TRADE — exchanging work or goods for money or other goods.\n\n🌍 Jobs Around the World:\nPeople all over the world have different jobs depending on where they live:\n• Near oceans — fishing\n• In forests — logging or ecotourism\n• In cities — banking, technology, media\n• On farms — growing crops and raising animals\n\nEvery job, big or small, makes the community work better!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/community_jobs.svg",
+        "alt": "Illustrations of different community helpers and their roles"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "A Day in the Life of a Community",
+    "text": "At 6:00 in the morning, the baker, Mr. Patel, arrived at his shop. He began mixing dough for bread that the town would eat that day.\n\nAt 7:00, Officer Rivera drove through the neighborhood making sure all was safe. She waved to the crossing guard, Mr. Lee, who helped children cross the street to school safely.\n\nAt school, Ms. Diaz taught her first-grade class about plants. \"Farmers grow the food we eat,\" she told her students, \"and scientists help us understand how.\"\n\nMeanwhile, at the construction site on Oak Avenue, workers were building a new library. The architect had drawn the plans, the carpenters were framing the walls, and the electrician was running wires for the lights.\n\nAt lunchtime, the school cafeteria workers served warm soup and sandwiches. Back on Main Street, the mail carrier, Mr. Washington, delivered letters and packages to every door.\n\nBy evening, Dr. Kim had seen twenty patients at the health clinic. A firefighter named Sofia had responded to a small kitchen fire — no one was hurt.\n\nWhen night came, the town was quiet. But it had taken dozens of different people — all doing their jobs — to make one ordinary day go well.\n\nNo job is too small. Every person in a community matters."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_ss_g1_l05_01",
+      "prompt": "What was Mr. Patel's job?",
+      "options": [
+        { "id": "a", "text": "Police officer" },
+        { "id": "b", "text": "Baker" },
+        { "id": "c", "text": "Teacher" },
+        { "id": "d", "text": "Doctor" }
+      ],
+      "correctId": "b",
+      "hint": "Read the very first paragraph — who arrived at 6:00 in the morning?"
+    },
+    {
+      "id": "cq_ss_g1_l05_02",
+      "prompt": "What was being built on Oak Avenue?",
+      "options": [
+        { "id": "a", "text": "A school" },
+        { "id": "b", "text": "A hospital" },
+        { "id": "c", "text": "A library" },
+        { "id": "d", "text": "A fire station" }
+      ],
+      "correctId": "c",
+      "hint": "Find the paragraph about the construction site on Oak Avenue."
+    },
+    {
+      "id": "cq_ss_g1_l05_03",
+      "prompt": "What does Mr. Lee do?",
+      "options": [
+        { "id": "a", "text": "Delivers mail" },
+        { "id": "b", "text": "Helps children cross the street safely" },
+        { "id": "c", "text": "Bakes bread" },
+        { "id": "d", "text": "Teaches science" }
+      ],
+      "correctId": "b",
+      "hint": "Officer Rivera waves to Mr. Lee — what is Mr. Lee helping with?"
+    },
+    {
+      "id": "cq_ss_g1_l05_04",
+      "prompt": "What is the main message of the story?",
+      "options": [
+        { "id": "a", "text": "Bakers are the most important community workers" },
+        { "id": "b", "text": "Every person doing their job helps make the community work well" },
+        { "id": "c", "text": "Communities only need police and doctors" },
+        { "id": "d", "text": "Jobs are only important in big cities" }
+      ],
+      "correctId": "b",
+      "hint": "Read the last two lines of the story — what do they say about jobs and community?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_ss_g1_l05_01",
+        "prompt": "A farmer who grows food is an example of a:",
+        "options": [
+          { "id": "a", "text": "Service provider" },
+          { "id": "b", "text": "Producer" },
+          { "id": "c", "text": "Consumer" },
+          { "id": "d", "text": "Community helper only" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l05_02",
+        "prompt": "Which job provides a service (not a good)?",
+        "options": [
+          { "id": "a", "text": "Baker" },
+          { "id": "b", "text": "Carpenter" },
+          { "id": "c", "text": "Teacher" },
+          { "id": "d", "text": "Factory worker making toys" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l05_03",
+        "prompt": "Why do people work jobs?",
+        "options": [
+          { "id": "a", "text": "Only to keep busy" },
+          { "id": "b", "text": "To earn money to buy things they need and want" },
+          { "id": "c", "text": "Because they have to" },
+          { "id": "d", "text": "Jobs are only for adults who like to work" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l05_04",
+        "prompt": "Which job would you most likely find in a community near the ocean?",
+        "options": [
+          { "id": "a", "text": "Logging" },
+          { "id": "b", "text": "Farming wheat" },
+          { "id": "c", "text": "Fishing" },
+          { "id": "d", "text": "Banking" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l05_05",
+        "prompt": "Which of these people is a community helper?",
+        "options": [
+          { "id": "a", "text": "A video game character" },
+          { "id": "b", "text": "A firefighter" },
+          { "id": "c", "text": "A movie star" },
+          { "id": "d", "text": "A sports team owner" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

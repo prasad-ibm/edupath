@@ -1,0 +1,127 @@
+{
+  "id": "physics_g1_l02",
+  "title": "Sink or Float",
+  "grade": 1,
+  "subject": "physics",
+  "content": {
+    "text": "Have you ever dropped something into water and watched it sink to the bottom — or float on top? There's a science reason for that!\n\n🚢 Why do some things float?\nAn object floats when it is less dense than water. Dense means how tightly packed the material is. A wooden block has air spaces inside, making it less dense — it floats!\n\n⚓ Why do some things sink?\nAn object sinks when it is denser than water. A rock is very densely packed with no air spaces — it sinks!\n\n🛳️ Wait — how do ships float?\nA giant steel ship seems like it should sink, but it doesn't! That's because the shape matters. A ship is hollow and filled with air inside. Its large shape pushes a lot of water out of the way — this is called BUOYANCY. The water pushes back up on the ship and keeps it floating.\n\nScientist Archimedes figured this out over 2,000 years ago! He said: an object in water is pushed up by a force equal to the weight of water it displaces (pushes aside).\n\n🔍 Testing Sink or Float:\nYou can predict whether something will sink or float by feeling if it's heavy for its size (dense = sinks) or light for its size (less dense = floats).\n\nFloating and sinking is an important part of physics that helps engineers build boats, submarines, and even life jackets!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/sink_float.svg",
+        "alt": "Diagram showing objects that sink and objects that float in water"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Drag objects into the water tank to test if they sink or float!",
+    "ingredients": [
+      { "id": "rubber_duck", "label": "Rubber Duck", "icon": "🦆" },
+      { "id": "water_tank", "label": "Water Tank", "icon": "🪣" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["rubber_duck", "water_tank"],
+        "animationKey": "mixing",
+        "resultLabel": "The rubber duck floats! It's less dense than water — the air inside helps it stay on top. The water pushes up on it with a force called buoyancy!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_phys_g1_l02_01",
+      "prompt": "Why does a rock sink in water?",
+      "options": [
+        { "id": "a", "text": "Because it is colorful" },
+        { "id": "b", "text": "Because it is denser than water" },
+        { "id": "c", "text": "Because it is light" },
+        { "id": "d", "text": "Because it has air spaces inside" }
+      ],
+      "correctId": "b",
+      "hint": "Dense objects sink. A rock is tightly packed — how does its density compare to water?"
+    },
+    {
+      "id": "pq_phys_g1_l02_02",
+      "prompt": "What is buoyancy?",
+      "options": [
+        { "id": "a", "text": "The force of gravity pulling down" },
+        { "id": "b", "text": "The upward push of water on an object" },
+        { "id": "c", "text": "How fast something sinks" },
+        { "id": "d", "text": "The color of water" }
+      ],
+      "correctId": "b",
+      "hint": "Buoyancy is what keeps ships floating — it pushes... which direction?"
+    },
+    {
+      "id": "pq_phys_g1_l02_03",
+      "prompt": "Why does a hollow steel ship float even though steel is heavy?",
+      "options": [
+        { "id": "a", "text": "Because ships are painted" },
+        { "id": "b", "text": "Because its hollow shape traps air and displaces a lot of water" },
+        { "id": "c", "text": "Because seawater is not real water" },
+        { "id": "d", "text": "Because ships have engines" }
+      ],
+      "correctId": "b",
+      "hint": "Think about how the ship's shape is different from a solid block of steel."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_phys_g1_l02_01",
+        "prompt": "Which object would most likely FLOAT?",
+        "options": [
+          { "id": "a", "text": "A metal coin" },
+          { "id": "b", "text": "A rock" },
+          { "id": "c", "text": "A wooden plank" },
+          { "id": "d", "text": "A glass marble" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l02_02",
+        "prompt": "An object floats when it is:",
+        "options": [
+          { "id": "a", "text": "Denser than water" },
+          { "id": "b", "text": "Less dense than water" },
+          { "id": "c", "text": "Exactly the same size as water" },
+          { "id": "d", "text": "Made of metal" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l02_03",
+        "prompt": "Who discovered the principle of buoyancy about 2,000 years ago?",
+        "options": [
+          { "id": "a", "text": "Newton" },
+          { "id": "b", "text": "Einstein" },
+          { "id": "c", "text": "Archimedes" },
+          { "id": "d", "text": "Galileo" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l02_04",
+        "prompt": "What does 'displace' mean when talking about buoyancy?",
+        "options": [
+          { "id": "a", "text": "To color the water" },
+          { "id": "b", "text": "To heat the water" },
+          { "id": "c", "text": "To push water aside" },
+          { "id": "d", "text": "To freeze the water" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l02_05",
+        "prompt": "What helps a life jacket keep a person floating?",
+        "options": [
+          { "id": "a", "text": "It is made of metal" },
+          { "id": "b", "text": "It contains foam or air that makes the person less dense than water" },
+          { "id": "c", "text": "It is very heavy" },
+          { "id": "d", "text": "It pushes down on the water" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

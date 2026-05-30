@@ -1,0 +1,127 @@
+{
+  "id": "physics_g1_l01",
+  "title": "Push and Pull — Forces",
+  "grade": 1,
+  "subject": "physics",
+  "content": {
+    "text": "Everything that moves has a FORCE behind it! A force is a push or a pull.\n\n👐 Push forces:\n• Pushing a shopping cart makes it roll forward\n• Kicking a ball sends it flying\n• Blowing air pushes a pinwheel to spin\n\n🤲 Pull forces:\n• Pulling open a drawer\n• A magnet pulling a paper clip\n• Gravity pulling everything down toward Earth\n\n🏋️ Stronger forces move things more:\nA gentle push moves a toy car slowly. A strong push moves it fast! The bigger the force, the faster or farther something moves.\n\n🔄 Forces can also STOP things:\nFriction is a force that slows things down. When you slide on the floor in your socks, friction eventually stops you. Rough surfaces create more friction than smooth ones.\n\n⚖️ Balanced vs Unbalanced Forces:\nIf two people push on opposite sides of a box with equal force, the box doesn't move — the forces are BALANCED.\nIf one person pushes harder, the box moves — the forces are UNBALANCED.\n\nForces are invisible, but we can see their effects everywhere — rolling balls, flying kites, falling leaves. Physics helps us understand forces!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/push_pull.svg",
+        "alt": "Diagram showing examples of push and pull forces"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Give the ball a push and watch what happens! Try dragging the ball into the target zone.",
+    "ingredients": [
+      { "id": "ball", "label": "Rubber Ball", "icon": "⚽" },
+      { "id": "ramp", "label": "Ramp", "icon": "📐" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["ball", "ramp"],
+        "animationKey": "mixing",
+        "resultLabel": "The ball rolls down the ramp! The push force set it in motion, and gravity keeps it rolling downhill. The ball goes faster on the smooth ramp than it would on a rough surface!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_phys_g1_l01_01",
+      "prompt": "What is a force?",
+      "options": [
+        { "id": "a", "text": "A type of material" },
+        { "id": "b", "text": "A push or a pull" },
+        { "id": "c", "text": "A kind of energy" },
+        { "id": "d", "text": "A type of machine" }
+      ],
+      "correctId": "b",
+      "hint": "Think about the two main things forces do — one starts with P, one with P too!"
+    },
+    {
+      "id": "pq_phys_g1_l01_02",
+      "prompt": "Which of these is an example of a PULL force?",
+      "options": [
+        { "id": "a", "text": "Kicking a soccer ball" },
+        { "id": "b", "text": "Blowing a pinwheel" },
+        { "id": "c", "text": "Gravity pulling an apple down" },
+        { "id": "d", "text": "Pushing a door open" }
+      ],
+      "correctId": "c",
+      "hint": "Gravity always pulls things — which answer involves something being pulled downward?"
+    },
+    {
+      "id": "pq_phys_g1_l01_03",
+      "prompt": "What is friction?",
+      "options": [
+        { "id": "a", "text": "A force that speeds things up" },
+        { "id": "b", "text": "A force that slows things down" },
+        { "id": "c", "text": "A type of push" },
+        { "id": "d", "text": "A type of pull" }
+      ],
+      "correctId": "b",
+      "hint": "When you slide on a floor in socks and eventually stop — what force caused that?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_phys_g1_l01_01",
+        "prompt": "Kicking a ball is an example of which type of force?",
+        "options": [
+          { "id": "a", "text": "A pull" },
+          { "id": "b", "text": "Friction" },
+          { "id": "c", "text": "A push" },
+          { "id": "d", "text": "Gravity" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l01_02",
+        "prompt": "If two people push a box with equal force from opposite sides, the box will:",
+        "options": [
+          { "id": "a", "text": "Move to the left" },
+          { "id": "b", "text": "Move to the right" },
+          { "id": "c", "text": "Not move at all" },
+          { "id": "d", "text": "Jump up" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l01_03",
+        "prompt": "What happens to a moving object when friction acts on it?",
+        "options": [
+          { "id": "a", "text": "It speeds up" },
+          { "id": "b", "text": "It changes color" },
+          { "id": "c", "text": "It slows down" },
+          { "id": "d", "text": "It gets heavier" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l01_04",
+        "prompt": "Which surface creates MORE friction?",
+        "options": [
+          { "id": "a", "text": "Ice" },
+          { "id": "b", "text": "Smooth tile floor" },
+          { "id": "c", "text": "Rough carpet" },
+          { "id": "d", "text": "Glass" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l01_05",
+        "prompt": "What does gravity do?",
+        "options": [
+          { "id": "a", "text": "Pushes things upward" },
+          { "id": "b", "text": "Pulls everything down toward Earth" },
+          { "id": "c", "text": "Makes things float" },
+          { "id": "d", "text": "Makes things hot" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

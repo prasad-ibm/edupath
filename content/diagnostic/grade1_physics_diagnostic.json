@@ -1,0 +1,120 @@
+{
+  "grade": 1,
+  "subject": "physics",
+  "questions": [
+    {
+      "id": "diag_phys_g1_001",
+      "difficulty": 1,
+      "prompt": "What do we call a push or a pull?",
+      "options": [
+        { "id": "a", "text": "Energy" },
+        { "id": "b", "text": "A force" },
+        { "id": "c", "text": "Motion" },
+        { "id": "d", "text": "Speed" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_phys_g1_002",
+      "difficulty": 1,
+      "prompt": "Which of these objects would most likely FLOAT in water?",
+      "options": [
+        { "id": "a", "text": "A rock" },
+        { "id": "b", "text": "A coin" },
+        { "id": "c", "text": "A rubber duck" },
+        { "id": "d", "text": "A glass marble" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_phys_g1_003",
+      "difficulty": 1,
+      "prompt": "What creates a shadow?",
+      "options": [
+        { "id": "a", "text": "Water blocking light" },
+        { "id": "b", "text": "An opaque object blocking light" },
+        { "id": "c", "text": "Electricity" },
+        { "id": "d", "text": "Wind" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_phys_g1_004",
+      "difficulty": 2,
+      "prompt": "What force always pulls objects down toward Earth?",
+      "options": [
+        { "id": "a", "text": "Friction" },
+        { "id": "b", "text": "Magnetism" },
+        { "id": "c", "text": "Gravity" },
+        { "id": "d", "text": "Buoyancy" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_phys_g1_005",
+      "difficulty": 2,
+      "prompt": "What causes sound?",
+      "options": [
+        { "id": "a", "text": "Light" },
+        { "id": "b", "text": "Vibrations" },
+        { "id": "c", "text": "Heat" },
+        { "id": "d", "text": "Gravity" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_phys_g1_006",
+      "difficulty": 2,
+      "prompt": "A ramp is an example of which simple machine?",
+      "options": [
+        { "id": "a", "text": "A lever" },
+        { "id": "b", "text": "A pulley" },
+        { "id": "c", "text": "An inclined plane" },
+        { "id": "d", "text": "A screw" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_phys_g1_007",
+      "difficulty": 3,
+      "prompt": "When two North poles of a magnet are brought together, they:",
+      "options": [
+        { "id": "a", "text": "Attract each other" },
+        { "id": "b", "text": "Repel each other" },
+        { "id": "c", "text": "Create electricity" },
+        { "id": "d", "text": "Nothing happens" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_phys_g1_008",
+      "difficulty": 3,
+      "prompt": "Sound travels FASTEST through which medium?",
+      "options": [
+        { "id": "a", "text": "Empty space" },
+        { "id": "b", "text": "Air" },
+        { "id": "c", "text": "Water" },
+        { "id": "d", "text": "Solid metal" }
+      ],
+      "correctId": "d"
+    },
+    {
+      "id": "diag_phys_g1_009",
+      "difficulty": 3,
+      "prompt": "What is the upward push of water on a floating object called?",
+      "options": [
+        { "id": "a", "text": "Gravity" },
+        { "id": "b", "text": "Friction" },
+        { "id": "c", "text": "Buoyancy" },
+        { "id": "d", "text": "Density" }
+      ],
+      "correctId": "c"
+    }
+  ],
+  "difficultyBands": {
+    "0": { "lessonStartIndex": 0 },
+    "1": { "lessonStartIndex": 0 },
+    "2": { "lessonStartIndex": 2 },
+    "3": { "lessonStartIndex": 4 }
+  }
+}

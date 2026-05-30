@@ -1,0 +1,129 @@
+{
+  "id": "history_g1_l06",
+  "title": "Maps, Globes, and Our World",
+  "grade": 1,
+  "subject": "history",
+  "content": {
+    "text": "People have been making maps for thousands of years! Maps help us find our way and understand the world around us.\n\n🗺️ What is a Map?\nA map is a drawing that shows what a place looks like from above — like a bird's eye view. Maps can show cities, roads, rivers, mountains, and countries.\n\n🌍 What is a Globe?\nA globe is a round model of the Earth. It shows all the continents and oceans. The Earth has 7 continents:\n1. North America 🌎\n2. South America\n3. Europe\n4. Africa\n5. Asia\n6. Australia\n7. Antarctica\n\nAnd 5 major oceans:\n1. Pacific Ocean\n2. Atlantic Ocean\n3. Indian Ocean\n4. Southern Ocean\n5. Arctic Ocean\n\n🧭 Map Keys and Compass Rose:\nMaps use symbols to show features like mountains, rivers, or capital cities. A MAP KEY (also called a legend) explains what each symbol means.\nA COMPASS ROSE shows directions: North (N), South (S), East (E), and West (W).\n\n📍 Types of Maps:\n• Physical maps show mountains, rivers, and natural features\n• Political maps show countries and city boundaries\n• Weather maps show rain, sun, and temperature\n\nMaps have helped explorers, travelers, and scientists for thousands of years. Even today, maps on phones help us find where we're going!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/world_map.svg",
+        "alt": "Simple world map showing continents and oceans"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "Luis Makes a Map",
+    "text": "Luis was excited. His class was going on a field trip to the community garden, and his teacher asked him to make a map of the school neighborhood to help everyone find the way.\n\nLuis started by walking outside and looking around. He noticed the school was on Oak Street. Across the street was the fire station. Down the block was the library, and next to the library was the park.\n\nBack inside, Luis drew a square for the school and labeled it. He drew a rectangle for the fire station across a straight line he called Oak Street. He added a small building for the library and drew some trees for the park.\n\nThen his teacher showed him how to add a compass rose — a little symbol showing North, South, East, and West — in the corner of his map.\n\n\"But how will people know what the tree symbol means?\" asked his classmate Sofia.\n\n\"Good question,\" said Luis. He added a small box at the bottom with pictures next to words: a square = school, a building = library, trees = park. That box was the map key.\n\nWhen the class walked to the garden the next day, they used Luis's map. Everyone agreed — it worked perfectly.\n\n\"Maps make the world easier to understand,\" his teacher said. Luis smiled. He thought making maps might be the best job in the world."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_hist_g1_l06_01",
+      "prompt": "Why did Luis make a map?",
+      "options": [
+        { "id": "a", "text": "For a homework assignment" },
+        { "id": "b", "text": "To help his class find the community garden" },
+        { "id": "c", "text": "Because he got lost" },
+        { "id": "d", "text": "To win a contest" }
+      ],
+      "correctId": "b",
+      "hint": "Read the first paragraph — what was the class doing and why did Luis need the map?"
+    },
+    {
+      "id": "cq_hist_g1_l06_02",
+      "prompt": "What is a map key?",
+      "options": [
+        { "id": "a", "text": "A key you use to lock a map" },
+        { "id": "b", "text": "A box that explains what symbols on a map mean" },
+        { "id": "c", "text": "A compass showing directions" },
+        { "id": "d", "text": "The title of the map" }
+      ],
+      "correctId": "b",
+      "hint": "Find the part of the story where Luis adds a box with pictures and words."
+    },
+    {
+      "id": "cq_hist_g1_l06_03",
+      "prompt": "What did Luis put in the corner of his map to show directions?",
+      "options": [
+        { "id": "a", "text": "A map key" },
+        { "id": "b", "text": "A compass rose" },
+        { "id": "c", "text": "A picture of the school" },
+        { "id": "d", "text": "His name" }
+      ],
+      "correctId": "b",
+      "hint": "His teacher showed him how to add this — what was it called?"
+    },
+    {
+      "id": "cq_hist_g1_l06_04",
+      "prompt": "How did Luis figure out what to draw on his map?",
+      "options": [
+        { "id": "a", "text": "He looked at another map" },
+        { "id": "b", "text": "He asked his parents" },
+        { "id": "c", "text": "He walked outside and looked around the neighborhood" },
+        { "id": "d", "text": "He used the internet" }
+      ],
+      "correctId": "c",
+      "hint": "Read the second paragraph — what did Luis do before drawing?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_hist_g1_l06_01",
+        "prompt": "How many continents are there on Earth?",
+        "options": [
+          { "id": "a", "text": "5" },
+          { "id": "b", "text": "6" },
+          { "id": "c", "text": "7" },
+          { "id": "d", "text": "8" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l06_02",
+        "prompt": "A compass rose on a map shows:",
+        "options": [
+          { "id": "a", "text": "How far you have to walk" },
+          { "id": "b", "text": "The symbols used on the map" },
+          { "id": "c", "text": "North, South, East, and West directions" },
+          { "id": "d", "text": "The name of the country" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l06_03",
+        "prompt": "What is a globe?",
+        "options": [
+          { "id": "a", "text": "A flat drawing of a city" },
+          { "id": "b", "text": "A round model of the Earth" },
+          { "id": "c", "text": "A type of calendar" },
+          { "id": "d", "text": "A weather report" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l06_04",
+        "prompt": "What type of map shows mountains and rivers?",
+        "options": [
+          { "id": "a", "text": "Political map" },
+          { "id": "b", "text": "Weather map" },
+          { "id": "c", "text": "Physical map" },
+          { "id": "d", "text": "Street map" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l06_05",
+        "prompt": "What does a MAP KEY help you do?",
+        "options": [
+          { "id": "a", "text": "Lock up your map safely" },
+          { "id": "b", "text": "Understand what the symbols on a map mean" },
+          { "id": "c", "text": "Find North on the map" },
+          { "id": "d", "text": "Measure distances" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "social_studies_g1_l04",
+  "title": "Maps, Directions, and My Neighborhood",
+  "grade": 1,
+  "subject": "social_studies",
+  "content": {
+    "text": "Your neighborhood is a place full of people, buildings, and services that help everyone live well. Learning to find your way around it — using directions and maps — is an important life skill!\n\n🏘️ What is a Neighborhood?\nA neighborhood is the area right around where you live. It usually includes:\n• Homes where families live\n• Stores for shopping\n• A school where children learn\n• Parks for playing\n• Places of worship\n• Fire stations and police stations for safety\n\n🧭 Cardinal Directions:\nDirections help us describe where places are:\n• North (N) — toward the top of a map\n• South (S) — toward the bottom\n• East (E) — toward the right\n• West (W) — toward the left\n\nTrick to remember: Never Eat Soggy Waffles (N-E-S-W going clockwise!)\n\n🗺️ Neighborhood Maps:\nA map of your neighborhood shows buildings and streets from a bird's eye view (looking down from above). Maps use:\n• Symbols — small pictures that represent real places\n• Labels — words that name streets and locations\n• A key/legend — explains what the symbols mean\n\n📍 Addresses:\nEvery home and building has an ADDRESS — a number and street name — so people can find it. Emergency services (fire trucks, ambulances) use addresses to help people quickly.\n\nKnowing your own address and neighborhood is important for your safety!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/neighborhood_map.svg",
+        "alt": "Simple neighborhood map with school, park, fire station, and homes labeled"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "Maya Finds Her Way",
+    "text": "Maya's class was going to the town library. The teacher said each student should try to give directions.\n\nMaya looked at the map Ms. Torres had drawn on the board. The school was in the center. The library was to the north, two blocks up.\n\n\"Maya, can you give us the directions?\" Ms. Torres asked.\n\nMaya took a deep breath. \"We walk out the front door of the school and go north on Pine Street. We pass the fire station on our left — that's to the west. Then we turn right — that's east — and walk one block. The library is on the corner.\"\n\n\"Perfect!\" said Ms. Torres. \"How did you figure that out?\"\n\n\"I looked at the compass rose on the map,\" Maya said. \"It showed me which way was north.\"\n\nAs the class walked to the library, Maya paid attention to the buildings they passed. She noticed the pharmacy on the south side of Oak Street and the park to the east. She even spotted a new bakery she had never seen before.\n\n\"Now I know my neighborhood better,\" Maya thought. \"Maps don't just help you get somewhere — they help you understand where you already are.\"\n\nAt the library, Ms. Torres gave everyone a blank neighborhood map to fill in. Maya already knew what to draw."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_ss_g1_l04_01",
+      "prompt": "Which direction was the library from the school?",
+      "options": [
+        { "id": "a", "text": "South" },
+        { "id": "b", "text": "East" },
+        { "id": "c", "text": "North" },
+        { "id": "d", "text": "West" }
+      ],
+      "correctId": "c",
+      "hint": "Read the paragraph where Maya describes the directions to the class."
+    },
+    {
+      "id": "cq_ss_g1_l04_02",
+      "prompt": "How did Maya figure out which direction was north?",
+      "options": [
+        { "id": "a", "text": "She asked a classmate" },
+        { "id": "b", "text": "She used the compass rose on the map" },
+        { "id": "c", "text": "She guessed" },
+        { "id": "d", "text": "She looked at the sun" }
+      ],
+      "correctId": "b",
+      "hint": "Ms. Torres asks Maya how she figured it out — find Maya's answer."
+    },
+    {
+      "id": "cq_ss_g1_l04_03",
+      "prompt": "What did Maya realize about maps while walking to the library?",
+      "options": [
+        { "id": "a", "text": "Maps are hard to use" },
+        { "id": "b", "text": "Maps only help you get somewhere new" },
+        { "id": "c", "text": "Maps help you understand where you already are" },
+        { "id": "d", "text": "Maps are only useful in big cities" }
+      ],
+      "correctId": "c",
+      "hint": "Read the paragraph that starts with 'Now I know my neighborhood better...'"
+    },
+    {
+      "id": "cq_ss_g1_l04_04",
+      "prompt": "Where was the fire station in relation to the school?",
+      "options": [
+        { "id": "a", "text": "To the east" },
+        { "id": "b", "text": "To the south" },
+        { "id": "c", "text": "To the west" },
+        { "id": "d", "text": "To the north" }
+      ],
+      "correctId": "c",
+      "hint": "Maya says they passed the fire station 'on our left' while walking north — what direction is left when facing north?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_ss_g1_l04_01",
+        "prompt": "Using 'Never Eat Soggy Waffles,' what is the correct clockwise order of directions?",
+        "options": [
+          { "id": "a", "text": "North, South, East, West" },
+          { "id": "b", "text": "North, East, South, West" },
+          { "id": "c", "text": "East, North, West, South" },
+          { "id": "d", "text": "South, North, West, East" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l04_02",
+        "prompt": "What is the purpose of a map legend (key)?",
+        "options": [
+          { "id": "a", "text": "To show how far apart places are" },
+          { "id": "b", "text": "To explain what the symbols on the map mean" },
+          { "id": "c", "text": "To list all the streets in the city" },
+          { "id": "d", "text": "To show which direction is north" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l04_03",
+        "prompt": "Why is it important to know your address?",
+        "options": [
+          { "id": "a", "text": "To impress your friends" },
+          { "id": "b", "text": "Emergency services use addresses to help people quickly" },
+          { "id": "c", "text": "To get mail only" },
+          { "id": "d", "text": "Because all addresses are the same" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l04_04",
+        "prompt": "On a standard map, which direction is at the top?",
+        "options": [
+          { "id": "a", "text": "South" },
+          { "id": "b", "text": "East" },
+          { "id": "c", "text": "West" },
+          { "id": "d", "text": "North" }
+        ],
+        "correctId": "d"
+      },
+      {
+        "id": "fa_ss_g1_l04_05",
+        "prompt": "Which of these would you find in a neighborhood?",
+        "options": [
+          { "id": "a", "text": "Ocean and jungle" },
+          { "id": "b", "text": "Schools, parks, stores, and homes" },
+          { "id": "c", "text": "Only factories" },
+          { "id": "d", "text": "Only farmland" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

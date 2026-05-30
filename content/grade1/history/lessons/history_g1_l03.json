@@ -1,0 +1,129 @@
+{
+  "id": "history_g1_l03",
+  "title": "Schools Long Ago and Today",
+  "grade": 1,
+  "subject": "history",
+  "content": {
+    "text": "School has always been important — but schools today look very different from schools of the past!\n\n🏫 Schools Long Ago (100–200 years ago):\n• There was often just ONE room for all students — from first grade to eighth grade!\n• One teacher taught ALL subjects to ALL ages at the same time\n• Students wrote on small chalkboards called slates instead of using paper\n• There were no pencils — students used chalk or quill pens dipped in ink\n• Books were very expensive, so the whole class shared one book\n• School only went from fall to spring — children worked on farms in summer\n• Girls and boys sometimes went to separate schools\n\n🏫 Schools Today:\n• Separate classrooms for each grade level\n• Trained teachers for different subjects\n• Pencils, paper, textbooks, and computers\n• School libraries with thousands of books\n• School sports, art programs, and music\n• Students from all backgrounds learn together\n\n📚 What stayed the same?\nStudents have always learned to read, write, and do math. Teachers have always cared about helping students grow. And students have always made friends at school!\n\nSchools change because communities change — and education helps communities grow.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/school_then_now.svg",
+        "alt": "Comparison of a one-room schoolhouse and a modern school classroom"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "The One-Room Schoolhouse",
+    "text": "It was 1895, and eight-year-old Thomas walked two miles through the snow to get to school.\n\nHis school was a single wooden room with a wood-burning stove in the middle. All thirty students — from age five to sixteen — sat in the same room. The little ones sat in the front. The older students sat in the back.\n\nMrs. Whitfield was the only teacher. She moved around the room all day, teaching reading to the younger children while the older ones practiced arithmetic.\n\nThomas had no notebook. He wrote his letters on a small slate with a piece of chalk. When the slate was full, he rubbed it clean with a cloth and started again.\n\nAt lunch, Thomas ate a biscuit and an apple that his mother had packed. After eating, the children played outside in the snow.\n\nIn the afternoon, Mrs. Whitfield read aloud from the one history book the school owned. Everyone listened very quietly.\n\nWhen Thomas arrived home that evening, his father asked, \"What did you learn today?\"\n\n\"I practiced my letters, learned my times tables, and heard a story about George Washington,\" Thomas said proudly.\n\nHis father nodded. \"Good. Education is the most important thing. Don't ever forget that.\""
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_hist_g1_l03_01",
+      "prompt": "How far did Thomas walk to school?",
+      "options": [
+        { "id": "a", "text": "One mile" },
+        { "id": "b", "text": "Two miles" },
+        { "id": "c", "text": "Five miles" },
+        { "id": "d", "text": "Half a mile" }
+      ],
+      "correctId": "b",
+      "hint": "Read the very first sentence of the passage carefully."
+    },
+    {
+      "id": "cq_hist_g1_l03_02",
+      "prompt": "What did Thomas use to write his letters?",
+      "options": [
+        { "id": "a", "text": "Paper and pencil" },
+        { "id": "b", "text": "A computer" },
+        { "id": "c", "text": "A slate and chalk" },
+        { "id": "d", "text": "A notebook and pen" }
+      ],
+      "correctId": "c",
+      "hint": "Find the paragraph that describes how Thomas wrote at school."
+    },
+    {
+      "id": "cq_hist_g1_l03_03",
+      "prompt": "How many teachers were in Thomas's school?",
+      "options": [
+        { "id": "a", "text": "Three" },
+        { "id": "b", "text": "Thirty" },
+        { "id": "c", "text": "One" },
+        { "id": "d", "text": "Eight" }
+      ],
+      "correctId": "c",
+      "hint": "Look for the sentence that tells you how many teachers were in the room."
+    },
+    {
+      "id": "cq_hist_g1_l03_04",
+      "prompt": "What did Thomas eat for lunch?",
+      "options": [
+        { "id": "a", "text": "Pizza and milk" },
+        { "id": "b", "text": "A biscuit and an apple" },
+        { "id": "c", "text": "Soup and bread" },
+        { "id": "d", "text": "A sandwich and chips" }
+      ],
+      "correctId": "b",
+      "hint": "Read the lunch paragraph in the middle of the passage."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_hist_g1_l03_01",
+        "prompt": "What was a one-room schoolhouse?",
+        "options": [
+          { "id": "a", "text": "A school with one student" },
+          { "id": "b", "text": "A school where all grades shared one room with one teacher" },
+          { "id": "c", "text": "A classroom with one computer" },
+          { "id": "d", "text": "A school built in one day" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l03_02",
+        "prompt": "What did students use to write on instead of paper long ago?",
+        "options": [
+          { "id": "a", "text": "Tablets" },
+          { "id": "b", "text": "Notebooks" },
+          { "id": "c", "text": "Slates" },
+          { "id": "d", "text": "Whiteboards" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l03_03",
+        "prompt": "Why did school used to end in summer?",
+        "options": [
+          { "id": "a", "text": "It was too cold to study" },
+          { "id": "b", "text": "Children needed to help on farms" },
+          { "id": "c", "text": "Teachers went on vacation" },
+          { "id": "d", "text": "There were no school buildings" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l03_04",
+        "prompt": "Which of these has STAYED THE SAME from past to present schools?",
+        "options": [
+          { "id": "a", "text": "Using slates to write" },
+          { "id": "b", "text": "Having only one teacher for all grades" },
+          { "id": "c", "text": "Learning to read, write, and do math" },
+          { "id": "d", "text": "Sharing one textbook for all students" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l03_05",
+        "prompt": "Schools today are different from schools long ago because:",
+        "options": [
+          { "id": "a", "text": "Learning is less important today" },
+          { "id": "b", "text": "Communities change and education grows with them" },
+          { "id": "c", "text": "Children today are smarter" },
+          { "id": "d", "text": "Old schools were better" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

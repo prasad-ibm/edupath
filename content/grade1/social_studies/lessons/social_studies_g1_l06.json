@@ -1,0 +1,129 @@
+{
+  "id": "social_studies_g1_l06",
+  "title": "Sharing, Fairness, and Being a Good Citizen",
+  "grade": 1,
+  "subject": "social_studies",
+  "content": {
+    "text": "Good communities are built by good citizens — people who do their part to help and treat others fairly!\n\n🤝 What is Citizenship?\nCitizenship means being a member of a community — and doing your part to make it better. A CITIZEN:\n• Follows rules and laws\n• Respects others\n• Helps their neighbors\n• Takes care of shared spaces (parks, schools, libraries)\n• Speaks up for fairness\n\n⚖️ What is Fairness?\nFairness means everyone gets what they need and are treated with respect — it does not always mean everyone gets the EXACT same thing.\n\nExample: If one student needs extra time on a test because of a learning difference, giving them extra time is FAIR — everyone gets what they need to succeed.\n\n💛 Acts of Kindness and Service:\n• Picking up trash in a park\n• Helping a neighbor carry groceries\n• Including a classmate who is left out\n• Donating food to a food bank\n• Volunteering at a shelter\n\n🌍 Global Citizens:\nWe are not just citizens of our neighborhood or country — we are global citizens! Our choices affect people around the world:\n• Buying fair-trade products supports farmers in other countries\n• Reducing waste helps keep the planet clean for everyone\n\n✨ Children as Citizens:\nYou don't have to be an adult to be a good citizen! You can be kind, fair, honest, and helpful every single day.\n\nThe world gets better when each person decides to make it better.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/good_citizen.svg",
+        "alt": "Illustration of children doing acts of good citizenship in their community"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "The Empty Lunch Table",
+    "text": "Every day at lunch, a girl named Amelia sat alone at the far end of the cafeteria. She had moved to the school three weeks ago and hadn't made any friends yet.\n\nJaden noticed her one Tuesday. He watched her eat quietly, looking at her tray.\n\n\"Why doesn't anyone sit with her?\" he asked his friend Mia.\n\n\"I don't know,\" Mia said. \"She seems shy.\"\n\nJaden thought about it for the rest of lunch. When the bell rang, he made a decision.\n\nThe next day, he walked over to Amelia's table before she sat down. \"Hey — do you want to sit with us?\"\n\nAmelia looked surprised. Then she smiled. \"Sure.\"\n\nAt the table, Jaden's friends were a little quiet at first. But soon they found out that Amelia loved drawing, just like Mia did. By the end of lunch, they were laughing and planning an art project together.\n\nThat night, Jaden's teacher sent home a note: \"Jaden showed exceptional kindness today by including a new student.\"\n\nJaden's mom read it and hugged him. \"You didn't do it for a note, though, did you?\"\n\nJaden shook his head. \"No. I just knew what it felt like to be the new kid.\"\n\nHis mom smiled. \"That's what makes it real kindness.\""
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_ss_g1_l06_01",
+      "prompt": "Why was Amelia sitting alone at lunch?",
+      "options": [
+        { "id": "a", "text": "She preferred to sit alone" },
+        { "id": "b", "text": "She had moved to the school recently and hadn't made friends yet" },
+        { "id": "c", "text": "She was in trouble with the teacher" },
+        { "id": "d", "text": "She arrived late to lunch every day" }
+      ],
+      "correctId": "b",
+      "hint": "Read the very first paragraph of the story."
+    },
+    {
+      "id": "cq_ss_g1_l06_02",
+      "prompt": "What did Jaden decide to do the next day?",
+      "options": [
+        { "id": "a", "text": "Tell the teacher about Amelia" },
+        { "id": "b", "text": "Invite Amelia to sit with his group" },
+        { "id": "c", "text": "Sit alone too" },
+        { "id": "d", "text": "Ask Amelia to help with homework" }
+      ],
+      "correctId": "b",
+      "hint": "Find the paragraph where Jaden makes a decision and walks over to Amelia."
+    },
+    {
+      "id": "cq_ss_g1_l06_03",
+      "prompt": "What did Jaden and Amelia have in common with Mia?",
+      "options": [
+        { "id": "a", "text": "They all loved soccer" },
+        { "id": "b", "text": "They all liked reading" },
+        { "id": "c", "text": "Amelia and Mia both loved drawing" },
+        { "id": "d", "text": "They were all new students" }
+      ],
+      "correctId": "c",
+      "hint": "Read the paragraph about what happened at the lunch table — what did they discover about Amelia?"
+    },
+    {
+      "id": "cq_ss_g1_l06_04",
+      "prompt": "Why did Jaden's mom say his kindness was 'real'?",
+      "options": [
+        { "id": "a", "text": "Because he got a good grade" },
+        { "id": "b", "text": "Because his teacher told him to" },
+        { "id": "c", "text": "Because he did it from empathy, not for a reward" },
+        { "id": "d", "text": "Because everyone saw him" }
+      ],
+      "correctId": "c",
+      "hint": "Read the last exchange between Jaden and his mom — why does she say it's real kindness?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_ss_g1_l06_01",
+        "prompt": "What does it mean to be a good citizen?",
+        "options": [
+          { "id": "a", "text": "Being famous in your community" },
+          { "id": "b", "text": "Following rules, respecting others, and helping your community" },
+          { "id": "c", "text": "Winning every competition" },
+          { "id": "d", "text": "Having the most money" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l06_02",
+        "prompt": "Fairness means:",
+        "options": [
+          { "id": "a", "text": "Everyone gets exactly the same thing" },
+          { "id": "b", "text": "The strongest person wins" },
+          { "id": "c", "text": "Everyone gets what they need and is treated with respect" },
+          { "id": "d", "text": "Only adults make decisions" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l06_03",
+        "prompt": "Which of these is an act of good citizenship?",
+        "options": [
+          { "id": "a", "text": "Throwing trash in the park" },
+          { "id": "b", "text": "Ignoring someone who needs help" },
+          { "id": "c", "text": "Picking up litter and keeping shared spaces clean" },
+          { "id": "d", "text": "Taking more than your share" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l06_04",
+        "prompt": "What makes someone a 'global citizen'?",
+        "options": [
+          { "id": "a", "text": "Traveling to every country" },
+          { "id": "b", "text": "Understanding that their choices can affect people around the world" },
+          { "id": "c", "text": "Speaking many languages" },
+          { "id": "d", "text": "Living in a big city" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l06_05",
+        "prompt": "Can children be good citizens?",
+        "options": [
+          { "id": "a", "text": "No, only adults can be citizens" },
+          { "id": "b", "text": "Only if they are class president" },
+          { "id": "c", "text": "Yes — by being kind, fair, honest, and helpful every day" },
+          { "id": "d", "text": "Only if they volunteer at big events" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

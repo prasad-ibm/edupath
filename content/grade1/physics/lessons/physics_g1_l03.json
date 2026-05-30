@@ -1,0 +1,127 @@
+{
+  "id": "physics_g1_l03",
+  "title": "Light and Shadows",
+  "grade": 1,
+  "subject": "physics",
+  "content": {
+    "text": "Light is amazing — it helps us see everything around us! Let's explore how light works.\n\n☀️ Sources of Light:\nSome objects make their own light — these are called LUMINOUS objects:\n• The Sun (the biggest source of light for Earth)\n• Light bulbs\n• Flames and candles\n• Fireflies!\n\nOther objects just reflect light — like the Moon and mirrors.\n\n🔦 How does light travel?\nLight travels in STRAIGHT LINES — very, very fast! It travels so fast that it can go around Earth 7 times in just one second!\n\n🌈 What are shadows?\nA shadow forms when an OPAQUE object blocks light. Opaque means light cannot pass through it. Your body blocks light from the sun and makes a shadow behind you.\n\nTransparent objects (like clear glass) let most light through — little or no shadow.\nTranslucent objects (like frosted glass) let some light through — a faint shadow.\nOpaque objects (like a rock) block all light — a dark shadow.\n\n🕐 Shadows change throughout the day:\n• Morning: shadow is long, pointing west (sun is in the east)\n• Noon: shadow is shortest (sun is overhead)\n• Afternoon: shadow is long, pointing east (sun is in the west)\n\nBefore clocks existed, people used shadow sticks called SUNDIALS to tell the time!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/light_shadows.svg",
+        "alt": "Diagram showing how shadows form and change direction throughout the day"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Shine the flashlight on the object and watch the shadow form! Try changing the angle.",
+    "ingredients": [
+      { "id": "flashlight", "label": "Flashlight", "icon": "🔦" },
+      { "id": "toy_block", "label": "Toy Block (opaque)", "icon": "🧱" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["flashlight", "toy_block"],
+        "animationKey": "circuit",
+        "resultLabel": "A shadow appears behind the block! The opaque block blocks the light from passing through, creating a dark shadow. Light travels in straight lines, so the shadow is the same shape as the block!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_phys_g1_l03_01",
+      "prompt": "Which of these is a LUMINOUS object?",
+      "options": [
+        { "id": "a", "text": "The Moon" },
+        { "id": "b", "text": "A mirror" },
+        { "id": "c", "text": "A candle flame" },
+        { "id": "d", "text": "A window" }
+      ],
+      "correctId": "c",
+      "hint": "Luminous means it makes its own light — which one actually produces light?"
+    },
+    {
+      "id": "pq_phys_g1_l03_02",
+      "prompt": "When is your shadow the SHORTEST during the day?",
+      "options": [
+        { "id": "a", "text": "Early morning" },
+        { "id": "b", "text": "At noon" },
+        { "id": "c", "text": "Late afternoon" },
+        { "id": "d", "text": "At sunset" }
+      ],
+      "correctId": "b",
+      "hint": "Think about where the sun is in the sky at noon — and how that affects shadow length."
+    },
+    {
+      "id": "pq_phys_g1_l03_03",
+      "prompt": "What kind of object creates a dark shadow?",
+      "options": [
+        { "id": "a", "text": "A transparent object" },
+        { "id": "b", "text": "A translucent object" },
+        { "id": "c", "text": "An opaque object" },
+        { "id": "d", "text": "A luminous object" }
+      ],
+      "correctId": "c",
+      "hint": "Which type of object completely blocks light from passing through?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_phys_g1_l03_01",
+        "prompt": "How does light travel?",
+        "options": [
+          { "id": "a", "text": "In curved lines" },
+          { "id": "b", "text": "In straight lines" },
+          { "id": "c", "text": "In circles" },
+          { "id": "d", "text": "In zigzag lines" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l03_02",
+        "prompt": "Frosted glass lets some light through but creates a faint shadow. This means frosted glass is:",
+        "options": [
+          { "id": "a", "text": "Opaque" },
+          { "id": "b", "text": "Luminous" },
+          { "id": "c", "text": "Translucent" },
+          { "id": "d", "text": "Reflective" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l03_03",
+        "prompt": "What is a sundial used for?",
+        "options": [
+          { "id": "a", "text": "Measuring temperature" },
+          { "id": "b", "text": "Telling time using shadows" },
+          { "id": "c", "text": "Predicting the weather" },
+          { "id": "d", "text": "Measuring rainfall" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l03_04",
+        "prompt": "In the morning, which direction does your shadow point?",
+        "options": [
+          { "id": "a", "text": "East" },
+          { "id": "b", "text": "South" },
+          { "id": "c", "text": "North" },
+          { "id": "d", "text": "West" }
+        ],
+        "correctId": "d"
+      },
+      {
+        "id": "fa_phys_g1_l03_05",
+        "prompt": "The Moon is NOT a luminous object because:",
+        "options": [
+          { "id": "a", "text": "It is too small" },
+          { "id": "b", "text": "It is too far away" },
+          { "id": "c", "text": "It reflects sunlight rather than making its own light" },
+          { "id": "d", "text": "It is made of rock" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "physics_g1_l04",
+  "title": "Sound and Vibrations",
+  "grade": 1,
+  "subject": "physics",
+  "content": {
+    "text": "Every sound you hear — music, voices, thunder, a dog barking — is made by VIBRATIONS!\n\n🎵 What is a vibration?\nA vibration is a very fast back-and-forth motion. When something vibrates, it makes the air around it move too. Those air movements travel to your ears as SOUND WAVES.\n\nTry this: put your hand on your throat and hum. You can feel the vibrations!\n\n🔊 Loud and Soft Sounds:\nA big vibration makes a LOUD sound.\nA small vibration makes a SOFT sound.\nWe measure loudness in DECIBELS (dB).\n• 0–30 dB: very quiet (whisper, rustling leaves)\n• 60 dB: normal talking\n• 100+ dB: very loud (concert, jet plane) — can hurt your ears!\n\n🎶 High and Low Sounds (Pitch):\nPitch is how high or low a sound is.\n• A short, tight guitar string makes a HIGH pitch\n• A long, loose guitar string makes a LOW pitch\n• Birds chirp at a high pitch; a tuba plays a low pitch\n\n🌊 How does sound travel?\nSound travels through AIR — and also through water and solids! Sound cannot travel through empty space (that's why space is silent). Sound travels about 343 meters per second in air — much slower than light!\n\nEars are specially shaped to collect sound waves and send them to the brain.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/sound_vibrations.svg",
+        "alt": "Diagram showing sound waves traveling from a vibrating object to an ear"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Pluck the rubber band and watch the vibrations create sound waves!",
+    "ingredients": [
+      { "id": "rubber_band", "label": "Rubber Band", "icon": "🎸" },
+      { "id": "box", "label": "Empty Box", "icon": "📦" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["rubber_band", "box"],
+        "animationKey": "bubbling",
+        "resultLabel": "The rubber band vibrates and makes sound! The empty box amplifies it — the air inside the box resonates with the vibrations, making the sound louder. This is how guitars work!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_phys_g1_l04_01",
+      "prompt": "What causes sound?",
+      "options": [
+        { "id": "a", "text": "Light waves" },
+        { "id": "b", "text": "Vibrations" },
+        { "id": "c", "text": "Heat" },
+        { "id": "d", "text": "Gravity" }
+      ],
+      "correctId": "b",
+      "hint": "Put your hand on your throat when you hum — what do you feel?"
+    },
+    {
+      "id": "pq_phys_g1_l04_02",
+      "prompt": "What is PITCH?",
+      "options": [
+        { "id": "a", "text": "How loud or soft a sound is" },
+        { "id": "b", "text": "How high or low a sound is" },
+        { "id": "c", "text": "How fast sound travels" },
+        { "id": "d", "text": "The direction a sound comes from" }
+      ],
+      "correctId": "b",
+      "hint": "A bird chirp is high _____, a tuba note is low _____."
+    },
+    {
+      "id": "pq_phys_g1_l04_03",
+      "prompt": "Why is space completely silent?",
+      "options": [
+        { "id": "a", "text": "Space is too cold for sound" },
+        { "id": "b", "text": "Sound cannot travel through empty space — there is no air" },
+        { "id": "c", "text": "Sounds are absorbed by stars" },
+        { "id": "d", "text": "Space is too big" }
+      ],
+      "correctId": "b",
+      "hint": "Sound needs a medium to travel through — what is NOT in empty space?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_phys_g1_l04_01",
+        "prompt": "What unit do we use to measure the loudness of sound?",
+        "options": [
+          { "id": "a", "text": "Meters" },
+          { "id": "b", "text": "Decibels" },
+          { "id": "c", "text": "Hertz" },
+          { "id": "d", "text": "Watts" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l04_02",
+        "prompt": "A tight short guitar string will make a:",
+        "options": [
+          { "id": "a", "text": "Low pitch sound" },
+          { "id": "b", "text": "Loud sound" },
+          { "id": "c", "text": "High pitch sound" },
+          { "id": "d", "text": "No sound" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l04_03",
+        "prompt": "Sound can travel through:",
+        "options": [
+          { "id": "a", "text": "Air only" },
+          { "id": "b", "text": "Air, water, and solids" },
+          { "id": "c", "text": "Only empty space" },
+          { "id": "d", "text": "Only liquids" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l04_04",
+        "prompt": "Approximately how loud is a normal conversation?",
+        "options": [
+          { "id": "a", "text": "10 decibels" },
+          { "id": "b", "text": "60 decibels" },
+          { "id": "c", "text": "120 decibels" },
+          { "id": "d", "text": "200 decibels" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l04_05",
+        "prompt": "How do ears help us hear?",
+        "options": [
+          { "id": "a", "text": "They create vibrations" },
+          { "id": "b", "text": "They block loud sounds" },
+          { "id": "c", "text": "They collect sound waves and send them to the brain" },
+          { "id": "d", "text": "They amplify all sounds" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

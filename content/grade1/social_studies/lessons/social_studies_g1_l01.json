@@ -1,0 +1,129 @@
+{
+  "id": "social_studies_g1_l01",
+  "title": "My Family and Me",
+  "grade": 1,
+  "subject": "social_studies",
+  "content": {
+    "text": "Every person belongs to a family! Families come in many shapes and sizes, but they all have something special in common — the people in them care for each other.\n\n👨‍👩‍👧‍👦 Types of Families:\n• Some families have a mom, dad, and children\n• Some families have one parent and children\n• Some families include grandparents living together\n• Some families have two moms or two dads\n• Some children are raised by grandparents, aunts, uncles, or foster families\n\nAll of these are real families!\n\n🏠 Family Roles:\nIn a family, everyone has a role — things they do to help the family:\n• Parents and guardians work to earn money and take care of the home\n• Children go to school and help with small chores\n• Grandparents share wisdom and family stories\n• Older siblings help take care of younger ones\n\n🌍 Families Around the World:\nFamilies all over the world eat together, celebrate special days, and pass on traditions. Different cultures have different foods, languages, clothing, and holidays — but every family teaches children about kindness, respect, and belonging.\n\n💛 What makes a family strong?\n• Caring for each other\n• Communicating and solving problems together\n• Spending time together\n• Supporting each other through hard times\n\nYou are an important part of your family!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/family_types.svg",
+        "alt": "Illustrations of different types of families from around the world"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "Kai's Special Family",
+    "text": "Kai had never thought much about what made a family — until his teacher asked the class to draw their families.\n\nKai drew himself, his grandmother Mele, his grandfather Joe, and their dog Biscuit. His parents lived far away for work, so Kai lived with his grandparents.\n\nHis classmate Sofia drew her mom, her stepdad, her baby sister, and her grandmother who lived next door.\n\nAnother classmate, Marcus, drew two dads and himself — plus a cat named Shadow.\n\nWhen everyone held up their drawings, Kai looked around. All the pictures looked different. Some had lots of people. Some had just a few. Some included pets.\n\n\"Are all these really families?\" Kai asked.\n\nHis teacher, Ms. Chen, smiled. \"Yes, absolutely. A family is a group of people — or people and pets — who love each other, take care of each other, and face life together. The shape doesn't matter.\"\n\nKai looked at his drawing again. Grandmother Mele made the best soup when he was sick. Grandfather Joe helped him with his reading every night. Biscuit slept at the foot of his bed.\n\n\"I have a really great family,\" Kai said.\n\nMs. Chen nodded. \"You all do.\""
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_ss_g1_l01_01",
+      "prompt": "Who does Kai live with?",
+      "options": [
+        { "id": "a", "text": "His mom and dad" },
+        { "id": "b", "text": "His grandparents" },
+        { "id": "c", "text": "His aunt and uncle" },
+        { "id": "d", "text": "Alone" }
+      ],
+      "correctId": "b",
+      "hint": "Read the second paragraph where Kai describes his drawing."
+    },
+    {
+      "id": "cq_ss_g1_l01_02",
+      "prompt": "According to Ms. Chen, what makes something a family?",
+      "options": [
+        { "id": "a", "text": "Having exactly two parents" },
+        { "id": "b", "text": "Living in the same house" },
+        { "id": "c", "text": "People who love and take care of each other" },
+        { "id": "d", "text": "Sharing the same last name" }
+      ],
+      "correctId": "c",
+      "hint": "Find Ms. Chen's answer when Kai asks if all the drawings are families."
+    },
+    {
+      "id": "cq_ss_g1_l01_03",
+      "prompt": "What does Grandfather Joe do to help Kai?",
+      "options": [
+        { "id": "a", "text": "Makes soup when he is sick" },
+        { "id": "b", "text": "Helps him with his reading every night" },
+        { "id": "c", "text": "Walks him to school" },
+        { "id": "d", "text": "Buys him toys" }
+      ],
+      "correctId": "b",
+      "hint": "Read near the end of the story where Kai thinks about what his grandparents do."
+    },
+    {
+      "id": "cq_ss_g1_l01_04",
+      "prompt": "Why did all the family drawings look different?",
+      "options": [
+        { "id": "a", "text": "The students were not good at drawing" },
+        { "id": "b", "text": "Families come in many different shapes and sizes" },
+        { "id": "c", "text": "Only some students had real families" },
+        { "id": "d", "text": "The teacher gave everyone different instructions" }
+      ],
+      "correctId": "b",
+      "hint": "Think about the main idea of this story and lesson — what is true about all families?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_ss_g1_l01_01",
+        "prompt": "Which of these is TRUE about families?",
+        "options": [
+          { "id": "a", "text": "All families must have exactly two parents" },
+          { "id": "b", "text": "Families come in many shapes and sizes" },
+          { "id": "c", "text": "Only families with children are real families" },
+          { "id": "d", "text": "All families live in the same type of home" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l01_02",
+        "prompt": "What is a family role?",
+        "options": [
+          { "id": "a", "text": "A game family members play together" },
+          { "id": "b", "text": "Something a person does to help the family" },
+          { "id": "c", "text": "The oldest person in a family" },
+          { "id": "d", "text": "A type of family celebration" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l01_03",
+        "prompt": "Which of these makes a family strong?",
+        "options": [
+          { "id": "a", "text": "Having a lot of money" },
+          { "id": "b", "text": "Living in a big house" },
+          { "id": "c", "text": "Caring for and supporting each other" },
+          { "id": "d", "text": "Watching the same TV shows" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l01_04",
+        "prompt": "Families around the world are similar because they:",
+        "options": [
+          { "id": "a", "text": "All speak the same language" },
+          { "id": "b", "text": "Eat the same foods" },
+          { "id": "c", "text": "All teach children kindness, respect, and belonging" },
+          { "id": "d", "text": "Have the same number of children" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l01_05",
+        "prompt": "What role do grandparents often have in a family?",
+        "options": [
+          { "id": "a", "text": "Going to school" },
+          { "id": "b", "text": "Sharing wisdom and family stories" },
+          { "id": "c", "text": "Earning all the money" },
+          { "id": "d", "text": "Making all the decisions" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

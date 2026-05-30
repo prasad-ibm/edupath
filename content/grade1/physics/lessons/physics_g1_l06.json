@@ -1,0 +1,127 @@
+{
+  "id": "physics_g1_l06",
+  "title": "Magnets and Magnetic Force",
+  "grade": 1,
+  "subject": "physics",
+  "content": {
+    "text": "Magnets are objects that create an invisible force — called MAGNETIC FORCE — that can attract or repel other objects without even touching them!\n\n🧲 What magnets attract:\nMagnets attract objects made of iron, steel, nickel, and cobalt. They do NOT attract plastic, wood, glass, rubber, or copper.\n\n🔴🔵 Poles — Every magnet has two ends:\n• North Pole (N)\n• South Pole (S)\n\nThe law of magnetic poles:\n✅ OPPOSITE poles attract — North attracts South\n❌ SAME poles repel — North pushes away North\n\n🌍 Earth is a Giant Magnet!\nOur planet has a magnetic field. That's why a compass works — the compass needle is a tiny magnet that always points toward Earth's magnetic North Pole. Sailors and explorers have used compasses for over 1,000 years!\n\n⚡ Electromagnets:\nWhen electricity flows through a wire wrapped around iron, it creates a temporary magnet called an ELECTROMAGNET. You can turn it on and off! Electromagnets are used in cranes to lift cars, in electric motors, and in doorbells.\n\n🔬 Magnetic force can work through materials:\nA magnet can attract a paper clip through a piece of paper or even a thin piece of plastic — the force passes right through!\n\nMagnetism is a fundamental force of nature, and it's used in everything from refrigerator magnets to MRI machines in hospitals.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/magnets.svg",
+        "alt": "Diagram showing magnetic poles, field lines, and examples of magnets attracting and repelling"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Drag the magnet near different objects to see which ones it attracts!",
+    "ingredients": [
+      { "id": "magnet", "label": "Bar Magnet", "icon": "🧲" },
+      { "id": "iron_nail", "label": "Iron Nail", "icon": "📌" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["magnet", "iron_nail"],
+        "animationKey": "circuit",
+        "resultLabel": "The magnet attracts the iron nail! Iron contains iron atoms that line up with the magnetic field. The magnetic force pulls them together — without them even touching at first!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_phys_g1_l06_01",
+      "prompt": "Which material will a magnet NOT attract?",
+      "options": [
+        { "id": "a", "text": "Steel paperclip" },
+        { "id": "b", "text": "Iron nail" },
+        { "id": "c", "text": "Wooden block" },
+        { "id": "d", "text": "Nickel coin" }
+      ],
+      "correctId": "c",
+      "hint": "Magnets attract iron, steel, nickel, and cobalt — is wood on that list?"
+    },
+    {
+      "id": "pq_phys_g1_l06_02",
+      "prompt": "What happens when you bring two North poles of magnets together?",
+      "options": [
+        { "id": "a", "text": "They attract each other" },
+        { "id": "b", "text": "They repel each other" },
+        { "id": "c", "text": "Nothing happens" },
+        { "id": "d", "text": "They create electricity" }
+      ],
+      "correctId": "b",
+      "hint": "Remember: same poles ___ , opposite poles ___"
+    },
+    {
+      "id": "pq_phys_g1_l06_03",
+      "prompt": "What makes a compass work?",
+      "options": [
+        { "id": "a", "text": "Electricity inside the compass" },
+        { "id": "b", "text": "Earth's gravitational pull" },
+        { "id": "c", "text": "Earth's magnetic field pulling the compass needle" },
+        { "id": "d", "text": "The sun's light reflecting" }
+      ],
+      "correctId": "c",
+      "hint": "A compass needle is a tiny magnet — what large magnet does it respond to?"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_phys_g1_l06_01",
+        "prompt": "Every magnet has:",
+        "options": [
+          { "id": "a", "text": "One pole" },
+          { "id": "b", "text": "Two poles — a North and a South" },
+          { "id": "c", "text": "Three poles" },
+          { "id": "d", "text": "No poles" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l06_02",
+        "prompt": "An electromagnet is different from a regular magnet because:",
+        "options": [
+          { "id": "a", "text": "It attracts wood" },
+          { "id": "b", "text": "It can be turned on and off using electricity" },
+          { "id": "c", "text": "It only has one pole" },
+          { "id": "d", "text": "It is made of plastic" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l06_03",
+        "prompt": "Which of these is attracted to a magnet?",
+        "options": [
+          { "id": "a", "text": "Glass cup" },
+          { "id": "b", "text": "Rubber eraser" },
+          { "id": "c", "text": "Steel paper clip" },
+          { "id": "d", "text": "Plastic toy" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l06_04",
+        "prompt": "If a North pole and a South pole are brought close together, they will:",
+        "options": [
+          { "id": "a", "text": "Repel each other" },
+          { "id": "b", "text": "Attract each other" },
+          { "id": "c", "text": "Create electricity" },
+          { "id": "d", "text": "Spin around" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l06_05",
+        "prompt": "Why do sailors use a compass?",
+        "options": [
+          { "id": "a", "text": "To measure how deep the ocean is" },
+          { "id": "b", "text": "To predict the weather" },
+          { "id": "c", "text": "To find direction using Earth's magnetic field" },
+          { "id": "d", "text": "To communicate with other ships" }
+        ],
+        "correctId": "c"
+      }
+    ]
+  }
+}

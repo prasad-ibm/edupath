@@ -1,0 +1,129 @@
+{
+  "id": "history_g1_l05",
+  "title": "American Symbols and Holidays",
+  "grade": 1,
+  "subject": "history",
+  "content": {
+    "text": "Every country has special symbols and holidays that remind people of who they are and what they believe in. The United States has many important ones!\n\n🇺🇸 American Symbols:\n\n🗽 The Statue of Liberty — Given to the U.S. by France in 1886. It stands in New York Harbor and is a symbol of freedom and welcome for people arriving in America.\n\n🦅 The Bald Eagle — The national bird of the United States. It appears on the Presidential Seal and represents strength and freedom.\n\n🔔 The Liberty Bell — Located in Philadelphia, Pennsylvania. It rang to announce important events like the signing of the Declaration of Independence.\n\n🏛️ The American Flag — 50 stars (one for each state) and 13 stripes (one for each original colony). We pledge allegiance to the flag as a sign of respect.\n\n🎉 American Holidays:\n\n🎆 Independence Day (July 4th) — Celebrates America declaring independence from Great Britain in 1776.\n\n🦃 Thanksgiving — Celebrates the Pilgrims and Native Americans sharing a harvest feast together.\n\n🌹 Memorial Day — Honors soldiers who gave their lives to protect our country.\n\n🤝 Martin Luther King Jr. Day — Honors the life and work of a great civil rights leader.\n\nSymbols and holidays connect us to our history. They remind us of the values that built America: freedom, courage, and unity.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/american_symbols.svg",
+        "alt": "Illustration of the Statue of Liberty, Bald Eagle, Liberty Bell, and American Flag"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "The Day Emma Saw the Statue of Liberty",
+    "text": "Emma and her family were visiting New York City for the very first time. They took a ferry boat across the water to a small island.\n\nAs they got closer, Emma saw something enormous rising out of the harbor — a tall green woman holding a torch high in the air.\n\n\"That's the Statue of Liberty!\" her father said. \"She was a gift from the people of France to the people of America.\"\n\nEmma stared up at the statue. \"Why is she green?\" she asked.\n\n\"She was originally made of copper — like a shiny penny,\" her mother explained. \"Over many years, the air and water changed her color to green. That process is called oxidation.\"\n\nEmma learned that the statue was built in 1886. Inside the base, there is a poem with these famous words: \"Give me your tired, your poor, your huddled masses yearning to breathe free.\"\n\n\"What does that mean?\" Emma asked.\n\n\"It means that America welcomes people from all over the world who are looking for a better life and more freedom,\" her father said.\n\nEmma looked up at the torch glowing in the sunlight. She thought about all the people who had crossed the ocean in ships and seen this same statue — and felt hope for the first time.\n\n\"I think she's the most beautiful thing I've ever seen,\" Emma said quietly."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_hist_g1_l05_01",
+      "prompt": "What country gave the Statue of Liberty to America?",
+      "options": [
+        { "id": "a", "text": "England" },
+        { "id": "b", "text": "France" },
+        { "id": "c", "text": "Spain" },
+        { "id": "d", "text": "Italy" }
+      ],
+      "correctId": "b",
+      "hint": "Emma's father explains this — read the second paragraph."
+    },
+    {
+      "id": "cq_hist_g1_l05_02",
+      "prompt": "Why did the Statue of Liberty turn green?",
+      "options": [
+        { "id": "a", "text": "It was painted green" },
+        { "id": "b", "text": "It is made of jade" },
+        { "id": "c", "text": "Air and water changed the copper color through oxidation" },
+        { "id": "d", "text": "The ocean water colored it" }
+      ],
+      "correctId": "c",
+      "hint": "Emma's mother explains this — look for the paragraph about the copper penny."
+    },
+    {
+      "id": "cq_hist_g1_l05_03",
+      "prompt": "What do the famous words on the Statue of Liberty mean, according to Emma's father?",
+      "options": [
+        { "id": "a", "text": "Only rich people are welcome in America" },
+        { "id": "b", "text": "America welcomes people from all over the world looking for freedom" },
+        { "id": "c", "text": "The statue was built by tired workers" },
+        { "id": "d", "text": "People should breathe fresh air" }
+      ],
+      "correctId": "b",
+      "hint": "Find the paragraph where Emma's father explains the meaning of the poem."
+    },
+    {
+      "id": "cq_hist_g1_l05_04",
+      "prompt": "When was the Statue of Liberty built?",
+      "options": [
+        { "id": "a", "text": "1776" },
+        { "id": "b", "text": "1776" },
+        { "id": "c", "text": "1886" },
+        { "id": "d", "text": "1955" }
+      ],
+      "correctId": "c",
+      "hint": "Look for the sentence that gives the year the statue was built."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_hist_g1_l05_01",
+        "prompt": "How many stars are on the American flag?",
+        "options": [
+          { "id": "a", "text": "13" },
+          { "id": "b", "text": "50" },
+          { "id": "c", "text": "48" },
+          { "id": "d", "text": "25" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l05_02",
+        "prompt": "What does Independence Day on July 4th celebrate?",
+        "options": [
+          { "id": "a", "text": "The end of the Civil War" },
+          { "id": "b", "text": "Thanksgiving" },
+          { "id": "c", "text": "America's declaration of independence from Great Britain" },
+          { "id": "d", "text": "The birthday of George Washington" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l05_03",
+        "prompt": "What is the national bird of the United States?",
+        "options": [
+          { "id": "a", "text": "Owl" },
+          { "id": "b", "text": "Bald Eagle" },
+          { "id": "c", "text": "Robin" },
+          { "id": "d", "text": "Hawk" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l05_04",
+        "prompt": "What holiday honors soldiers who gave their lives to protect our country?",
+        "options": [
+          { "id": "a", "text": "Independence Day" },
+          { "id": "b", "text": "Thanksgiving" },
+          { "id": "c", "text": "Martin Luther King Jr. Day" },
+          { "id": "d", "text": "Memorial Day" }
+        ],
+        "correctId": "d"
+      },
+      {
+        "id": "fa_hist_g1_l05_05",
+        "prompt": "Why do symbols and holidays matter?",
+        "options": [
+          { "id": "a", "text": "They give us days off school" },
+          { "id": "b", "text": "They connect us to our history and remind us of our values" },
+          { "id": "c", "text": "They make the country look pretty" },
+          { "id": "d", "text": "They are just for adults" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

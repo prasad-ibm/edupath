@@ -1,0 +1,127 @@
+{
+  "id": "chemistry_g1_l06",
+  "title": "Chemistry All Around Us",
+  "grade": 1,
+  "subject": "chemistry",
+  "content": {
+    "text": "Chemistry is everywhere — even in your kitchen, bathroom, and garden!\n\n🍋 Acids and Bases (simple introduction):\nSome things taste sour — like lemons and vinegar. Scientists call these ACIDS.\nSome things feel slippery or taste bitter — like soap and baking soda. Scientists call these BASES.\nWhen an acid and a base mix, something exciting happens — they REACT and make bubbles of gas!\n\n🌈 Indicators tell us if something is an acid or base:\nRed cabbage juice is a natural indicator. It turns PINK in an acid and BLUE-GREEN in a base.\n\n🔬 Solutions and Mixtures:\nA SOLUTION is when one thing dissolves completely into another — like sugar in water. You cannot see the sugar anymore, but it is still there!\nA MIXTURE is when two things are combined but you can still see both — like a salad.\n\n♻️ Chemistry helps the environment:\nChemists study how to make cleaner fuels, reduce pollution, and create materials that can be recycled.\n\nChemistry is the science of matter and how it changes. Every time you mix, heat, or dissolve something, you are doing chemistry!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/chemistry_around_us.svg",
+        "alt": "Diagram showing everyday chemistry examples in kitchen and home"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Mix the red cabbage juice with different liquids to test if they are acids or bases!",
+    "ingredients": [
+      { "id": "cabbage_juice", "label": "Red Cabbage Juice", "icon": "🧪" },
+      { "id": "lemon_juice", "label": "Lemon Juice (acid)", "icon": "🍋" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["cabbage_juice", "lemon_juice"],
+        "animationKey": "color_change",
+        "resultLabel": "The cabbage juice turns PINK! Lemon juice is an acid. The color change tells us the liquid is acidic. Red cabbage juice is a natural pH indicator!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_chem_g1_l06_01",
+      "prompt": "Lemon juice tastes sour. What does that tell us about it?",
+      "options": [
+        { "id": "a", "text": "It is a base" },
+        { "id": "b", "text": "It is an acid" },
+        { "id": "c", "text": "It is a mixture" },
+        { "id": "d", "text": "It is a solid" }
+      ],
+      "correctId": "b",
+      "hint": "Sour taste is a clue — which type of substance tastes sour, acids or bases?"
+    },
+    {
+      "id": "pq_chem_g1_l06_02",
+      "prompt": "When sugar is stirred into water and disappears, what has formed?",
+      "options": [
+        { "id": "a", "text": "A mixture" },
+        { "id": "b", "text": "A solid" },
+        { "id": "c", "text": "A solution" },
+        { "id": "d", "text": "A reaction" }
+      ],
+      "correctId": "c",
+      "hint": "When one thing dissolves completely into another, the name starts with 'sol'..."
+    },
+    {
+      "id": "pq_chem_g1_l06_03",
+      "prompt": "What happens when an acid and a base are mixed?",
+      "options": [
+        { "id": "a", "text": "Nothing happens" },
+        { "id": "b", "text": "They react and often make bubbles" },
+        { "id": "c", "text": "They both turn blue" },
+        { "id": "d", "text": "They turn into a solid" }
+      ],
+      "correctId": "b",
+      "hint": "Remember the baking soda and vinegar experiment from Lesson 3!"
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_chem_g1_l06_01",
+        "prompt": "Soap feels slippery and is slightly bitter. What is soap most likely?",
+        "options": [
+          { "id": "a", "text": "An acid" },
+          { "id": "b", "text": "A base" },
+          { "id": "c", "text": "A mixture" },
+          { "id": "d", "text": "A solution" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_chem_g1_l06_02",
+        "prompt": "A fruit salad with apples, grapes, and berries is an example of:",
+        "options": [
+          { "id": "a", "text": "A solution" },
+          { "id": "b", "text": "A chemical reaction" },
+          { "id": "c", "text": "A mixture" },
+          { "id": "d", "text": "An acid" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l06_03",
+        "prompt": "What color does red cabbage juice turn when it touches an acid?",
+        "options": [
+          { "id": "a", "text": "Blue-green" },
+          { "id": "b", "text": "Yellow" },
+          { "id": "c", "text": "Pink" },
+          { "id": "d", "text": "Black" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l06_04",
+        "prompt": "What is the science of matter and how it changes called?",
+        "options": [
+          { "id": "a", "text": "Biology" },
+          { "id": "b", "text": "Physics" },
+          { "id": "c", "text": "Chemistry" },
+          { "id": "d", "text": "Geography" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_chem_g1_l06_05",
+        "prompt": "Salt dissolved in water is an example of:",
+        "options": [
+          { "id": "a", "text": "An irreversible change" },
+          { "id": "b", "text": "A solution" },
+          { "id": "c", "text": "A base reacting with an acid" },
+          { "id": "d", "text": "A mixture where you can see both parts" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

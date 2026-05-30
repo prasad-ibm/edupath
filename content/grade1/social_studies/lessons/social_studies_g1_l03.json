@@ -1,0 +1,129 @@
+{
+  "id": "social_studies_g1_l03",
+  "title": "Rules and Laws — Why We Have Them",
+  "grade": 1,
+  "subject": "social_studies",
+  "content": {
+    "text": "Rules and laws might seem strict, but they exist to protect everyone and keep communities safe and fair!\n\n📋 What is a Rule?\nA rule is an agreement about how to behave. Rules exist at home, at school, and on sports teams:\n• At home: clean up your toys, be kind to siblings\n• At school: raise your hand to speak, no running in hallways\n• In sports: follow the referee's decisions\n\n⚖️ What is a Law?\nA law is an official rule made by a government. Laws apply to everyone in a community, city, or country:\n• Traffic laws — red means stop, green means go\n• Laws against stealing — protect people's belongings\n• Laws about school attendance — make sure all children get an education\n\n🏛️ Who makes laws?\nIn the United States, elected leaders make laws:\n• City councils make local laws\n• State governments make state laws\n• Congress (Senate + House of Representatives) makes national laws\n• The President signs laws to make them official\n\n👮 Who enforces rules and laws?\n• Teachers enforce classroom rules\n• Police officers enforce laws\n• Judges decide what happens if someone breaks a law\n\n🤝 Why rules and laws are important:\n• They protect people from harm\n• They make things fair for everyone\n• They help people live and work together peacefully\n\nWhen we follow rules and laws, we help make our community a better place for everyone!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/rules_laws.svg",
+        "alt": "Illustration showing home rules, school rules, and community laws"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "The New Playground Rule",
+    "text": "At Riverside Elementary, the playground had a problem. During recess, older students kept accidentally bumping into younger ones near the swings, and twice last week someone had gotten hurt.\n\nThe principal, Ms. Jackson, decided to hold a school meeting. \"We need a new rule to keep everyone safe on the playground,\" she said.\n\nStudents from each grade were asked to share ideas. A third-grader suggested: \"Older students should use the far side of the playground. Younger students use the side near the building.\"\n\nA first-grader named Zoe raised her hand. \"But what if a younger kid wants to use the climbing wall? That's on the older side.\"\n\nMs. Jackson smiled. \"Great thinking, Zoe. Let's adjust: students can use any area, but they must watch where they're going and give space to smaller students.\"\n\nThe students voted. Most agreed the rule was fair.\n\nFor two weeks, the new rule was tested. Accidents dropped from four a week to zero.\n\nAt the next meeting, Ms. Jackson asked, \"Should we keep this rule?\"\n\nEveryone said yes — including Zoe.\n\n\"Rules are better when everyone helps make them,\" Zoe told her mom that night. \"Then everyone understands why they matter.\""
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_ss_g1_l03_01",
+      "prompt": "What problem led to the new playground rule?",
+      "options": [
+        { "id": "a", "text": "Students were throwing things" },
+        { "id": "b", "text": "Older students kept accidentally bumping into younger ones near the swings" },
+        { "id": "c", "text": "The playground was too small" },
+        { "id": "d", "text": "Students were arguing about rules" }
+      ],
+      "correctId": "b",
+      "hint": "Read the very first paragraph of the passage."
+    },
+    {
+      "id": "cq_ss_g1_l03_02",
+      "prompt": "How did Zoe improve the new rule?",
+      "options": [
+        { "id": "a", "text": "She said there should be no rules" },
+        { "id": "b", "text": "She pointed out that younger kids should be able to use the climbing wall" },
+        { "id": "c", "text": "She said older kids shouldn't be allowed outside" },
+        { "id": "d", "text": "She voted against the rule" }
+      ],
+      "correctId": "b",
+      "hint": "Find the paragraph where Zoe raises her hand and asks a question."
+    },
+    {
+      "id": "cq_ss_g1_l03_03",
+      "prompt": "What happened after the new rule was put in place?",
+      "options": [
+        { "id": "a", "text": "Accidents increased" },
+        { "id": "b", "text": "Students stopped using the playground" },
+        { "id": "c", "text": "Accidents dropped from four per week to zero" },
+        { "id": "d", "text": "Teachers had to watch the playground every minute" }
+      ],
+      "correctId": "c",
+      "hint": "Read the paragraph that describes what happened 'for two weeks.'"
+    },
+    {
+      "id": "cq_ss_g1_l03_04",
+      "prompt": "What did Zoe say about rules at the end of the story?",
+      "options": [
+        { "id": "a", "text": "Rules are not important" },
+        { "id": "b", "text": "Rules are better when everyone helps make them" },
+        { "id": "c", "text": "Only adults should make rules" },
+        { "id": "d", "text": "Rules should change every week" }
+      ],
+      "correctId": "b",
+      "hint": "Read the very last line of the passage — Zoe talks to her mom."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_ss_g1_l03_01",
+        "prompt": "What is the difference between a rule and a law?",
+        "options": [
+          { "id": "a", "text": "They are exactly the same" },
+          { "id": "b", "text": "A law is an official rule made by government; a rule is an agreement about behavior" },
+          { "id": "c", "text": "Rules only apply to children" },
+          { "id": "d", "text": "Laws only apply to adults" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l03_02",
+        "prompt": "Who enforces classroom rules?",
+        "options": [
+          { "id": "a", "text": "Police officers" },
+          { "id": "b", "text": "Judges" },
+          { "id": "c", "text": "Teachers" },
+          { "id": "d", "text": "The President" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l03_03",
+        "prompt": "Why are traffic laws important?",
+        "options": [
+          { "id": "a", "text": "To make cars drive faster" },
+          { "id": "b", "text": "To keep drivers and pedestrians safe" },
+          { "id": "c", "text": "To earn money for the government" },
+          { "id": "d", "text": "To make roads look nice" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l03_04",
+        "prompt": "In the US, who makes national laws?",
+        "options": [
+          { "id": "a", "text": "The Mayor" },
+          { "id": "b", "text": "The school principal" },
+          { "id": "c", "text": "Congress" },
+          { "id": "d", "text": "Police officers" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l03_05",
+        "prompt": "Following rules and laws helps communities because:",
+        "options": [
+          { "id": "a", "text": "It makes some people more powerful than others" },
+          { "id": "b", "text": "It protects people and helps everyone live fairly together" },
+          { "id": "c", "text": "It gives leaders more control" },
+          { "id": "d", "text": "It reduces the number of people in a community" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

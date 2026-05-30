@@ -1,0 +1,120 @@
+{
+  "grade": 1,
+  "subject": "history",
+  "questions": [
+    {
+      "id": "diag_hist_g1_001",
+      "difficulty": 1,
+      "prompt": "What do we call the place where people live, work, and play together?",
+      "options": [
+        { "id": "a", "text": "A factory" },
+        { "id": "b", "text": "A community" },
+        { "id": "c", "text": "A desert" },
+        { "id": "d", "text": "A museum" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_hist_g1_002",
+      "difficulty": 1,
+      "prompt": "Long ago, how did most people travel from place to place?",
+      "options": [
+        { "id": "a", "text": "By airplane" },
+        { "id": "b", "text": "By car" },
+        { "id": "c", "text": "By walking or on horses" },
+        { "id": "d", "text": "By elevator" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_hist_g1_003",
+      "difficulty": 1,
+      "prompt": "Which of these helps us find direction on a map?",
+      "options": [
+        { "id": "a", "text": "A legend" },
+        { "id": "b", "text": "A compass rose" },
+        { "id": "c", "text": "A timeline" },
+        { "id": "d", "text": "A photograph" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_hist_g1_004",
+      "difficulty": 2,
+      "prompt": "Harriet Tubman is known for helping people escape through the:",
+      "options": [
+        { "id": "a", "text": "Underground Railroad" },
+        { "id": "b", "text": "Continental Railroad" },
+        { "id": "c", "text": "Underground Highway" },
+        { "id": "d", "text": "Freedom Express" }
+      ],
+      "correctId": "a"
+    },
+    {
+      "id": "diag_hist_g1_005",
+      "difficulty": 2,
+      "prompt": "How many stars are on the American flag?",
+      "options": [
+        { "id": "a", "text": "13" },
+        { "id": "b", "text": "48" },
+        { "id": "c", "text": "50" },
+        { "id": "d", "text": "100" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_hist_g1_006",
+      "difficulty": 2,
+      "prompt": "What did students in one-room schoolhouses write on instead of paper?",
+      "options": [
+        { "id": "a", "text": "Notebooks" },
+        { "id": "b", "text": "Tablets" },
+        { "id": "c", "text": "Slates" },
+        { "id": "d", "text": "Whiteboards" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_hist_g1_007",
+      "difficulty": 3,
+      "prompt": "What event does Independence Day on July 4th celebrate?",
+      "options": [
+        { "id": "a", "text": "The end of the Civil War" },
+        { "id": "b", "text": "America declaring independence from Great Britain in 1776" },
+        { "id": "c", "text": "George Washington's birthday" },
+        { "id": "d", "text": "The founding of the United Nations" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_hist_g1_008",
+      "difficulty": 3,
+      "prompt": "What type of map shows mountains and rivers?",
+      "options": [
+        { "id": "a", "text": "Political map" },
+        { "id": "b", "text": "Weather map" },
+        { "id": "c", "text": "Physical map" },
+        { "id": "d", "text": "Population map" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_hist_g1_009",
+      "difficulty": 3,
+      "prompt": "Why did Rosa Parks' actions in 1955 matter?",
+      "options": [
+        { "id": "a", "text": "She invented a new type of bus" },
+        { "id": "b", "text": "Her courage helped start the Civil Rights Movement for equal rights" },
+        { "id": "c", "text": "She became president of the United States" },
+        { "id": "d", "text": "She built the first school for African Americans" }
+      ],
+      "correctId": "b"
+    }
+  ],
+  "difficultyBands": {
+    "0": { "lessonStartIndex": 0 },
+    "1": { "lessonStartIndex": 0 },
+    "2": { "lessonStartIndex": 2 },
+    "3": { "lessonStartIndex": 4 }
+  }
+}

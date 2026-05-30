@@ -1,0 +1,127 @@
+{
+  "id": "physics_g1_l05",
+  "title": "Simple Machines",
+  "grade": 1,
+  "subject": "physics",
+  "content": {
+    "text": "Simple machines are tools that make work easier! They don't reduce the amount of work, but they change how we do it — letting us use less force or move things in a better direction.\n\nThere are 6 types of simple machines:\n\n⚙️ 1. Lever — A stiff bar that rests on a pivot point (called a fulcrum). A seesaw is a lever! Levers help lift heavy objects with less force.\n\n🎡 2. Wheel and Axle — A wheel attached to a rod. A doorknob and bicycle wheel are examples. They make turning easier.\n\n⛵ 3. Pulley — A wheel with a rope around it. Used to lift heavy things upward by pulling down instead. Flagpoles and cranes use pulleys.\n\n📐 4. Inclined Plane — A slanted surface (a ramp!). Instead of lifting something straight up, you push it up a ramp using less force. Wheelchair ramps and loading docks are inclined planes.\n\n🔩 5. Wedge — Two inclined planes put together, making a pointed edge. Used to split or cut things apart. Axes, knives, and doorstops are wedges.\n\n🔧 6. Screw — An inclined plane wrapped in a spiral. Screws hold things together and can lift objects (like a screw jack that raises a car). Jar lids also use screws!\n\nEngineers combine simple machines to make COMPOUND MACHINES — like bicycles, scissors, and cranes.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/simple_machines.svg",
+        "alt": "Illustrations of six simple machines: lever, wheel and axle, pulley, inclined plane, wedge, and screw"
+      }
+    ]
+  },
+  "experiment": {
+    "instructions": "Use the ramp (inclined plane) to roll the heavy box up! Compare how hard it is with and without the ramp.",
+    "ingredients": [
+      { "id": "heavy_box", "label": "Heavy Box", "icon": "📦" },
+      { "id": "ramp_board", "label": "Ramp Board", "icon": "📐" }
+    ],
+    "combinations": [
+      {
+        "requiredItems": ["heavy_box", "ramp_board"],
+        "animationKey": "mixing",
+        "resultLabel": "The box rolls up the ramp easily! The inclined plane spreads the work over a longer distance, so you need less force at any one moment. This is why ramps are used instead of stairs for heavy loads!"
+      }
+    ]
+  },
+  "practiceQuestions": [
+    {
+      "id": "pq_phys_g1_l05_01",
+      "prompt": "A seesaw is an example of which simple machine?",
+      "options": [
+        { "id": "a", "text": "A pulley" },
+        { "id": "b", "text": "A lever" },
+        { "id": "c", "text": "A screw" },
+        { "id": "d", "text": "A wedge" }
+      ],
+      "correctId": "b",
+      "hint": "A seesaw rests on a pivot point in the middle — what simple machine has a fulcrum?"
+    },
+    {
+      "id": "pq_phys_g1_l05_02",
+      "prompt": "What simple machine is used to lift a flag on a flagpole?",
+      "options": [
+        { "id": "a", "text": "Lever" },
+        { "id": "b", "text": "Inclined plane" },
+        { "id": "c", "text": "Pulley" },
+        { "id": "d", "text": "Wedge" }
+      ],
+      "correctId": "c",
+      "hint": "A flagpole has a rope and a wheel — what simple machine does this describe?"
+    },
+    {
+      "id": "pq_phys_g1_l05_03",
+      "prompt": "An axe that splits wood is an example of a:",
+      "options": [
+        { "id": "a", "text": "Screw" },
+        { "id": "b", "text": "Lever" },
+        { "id": "c", "text": "Pulley" },
+        { "id": "d", "text": "Wedge" }
+      ],
+      "correctId": "d",
+      "hint": "A wedge has a pointed edge used to push apart or cut through material."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_phys_g1_l05_01",
+        "prompt": "Which simple machine is a slanted surface used to move heavy objects?",
+        "options": [
+          { "id": "a", "text": "Lever" },
+          { "id": "b", "text": "Pulley" },
+          { "id": "c", "text": "Inclined plane" },
+          { "id": "d", "text": "Wheel and axle" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l05_02",
+        "prompt": "A bicycle is an example of a:",
+        "options": [
+          { "id": "a", "text": "Simple machine" },
+          { "id": "b", "text": "Compound machine made of simple machines" },
+          { "id": "c", "text": "Lever only" },
+          { "id": "d", "text": "Chemical reaction" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_phys_g1_l05_03",
+        "prompt": "What is the pivot point of a lever called?",
+        "options": [
+          { "id": "a", "text": "Axle" },
+          { "id": "b", "text": "Groove" },
+          { "id": "c", "text": "Fulcrum" },
+          { "id": "d", "text": "Hub" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_phys_g1_l05_04",
+        "prompt": "A jar lid uses which simple machine?",
+        "options": [
+          { "id": "a", "text": "Lever" },
+          { "id": "b", "text": "Wedge" },
+          { "id": "c", "text": "Pulley" },
+          { "id": "d", "text": "Screw" }
+        ],
+        "correctId": "d"
+      },
+      {
+        "id": "fa_phys_g1_l05_05",
+        "prompt": "Simple machines make work easier by:",
+        "options": [
+          { "id": "a", "text": "Removing the need for any force" },
+          { "id": "b", "text": "Letting us use less force or move things more conveniently" },
+          { "id": "c", "text": "Making objects lighter" },
+          { "id": "d", "text": "Adding extra energy to the system" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

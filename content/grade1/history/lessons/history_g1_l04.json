@@ -1,0 +1,129 @@
+{
+  "id": "history_g1_l04",
+  "title": "Famous People Who Made a Difference",
+  "grade": 1,
+  "subject": "history",
+  "content": {
+    "text": "Throughout history, some people have done brave and amazing things that changed the world for the better!\n\n🦅 George Washington (1732–1799)\nGeorge Washington was the first President of the United States. He helped lead American colonists to freedom during the Revolutionary War. He believed everyone deserved a fair government.\n\n✊ Harriet Tubman (1822–1913)\nHarriet Tubman was incredibly brave. She escaped from slavery and then risked her life to help hundreds of other enslaved people escape to freedom through a secret network called the Underground Railroad.\n\n💡 Abraham Lincoln (1809–1865)\nAbraham Lincoln was the 16th President. During a very difficult time called the Civil War, he worked to end slavery in America and keep the country united.\n\n🌟 Rosa Parks (1913–2005)\nRosa Parks stood up for fairness by refusing to give up her seat on a bus in 1955. Her courage helped start the Civil Rights Movement, which fought for equal rights for all people.\n\n🔬 Marie Curie (1867–1934)\nMarie Curie was a brilliant scientist who discovered two new elements and won two Nobel Prizes. She showed that women could be great scientists.\n\nThese people were brave, fair, and determined. Their choices made life better for many others. We can honor them by being brave and fair ourselves!",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/famous_people.svg",
+        "alt": "Illustrated portraits of George Washington, Harriet Tubman, Rosa Parks, and Abraham Lincoln"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "Rosa Parks: One Brave Seat",
+    "text": "It was December 1, 1955, in Montgomery, Alabama. A woman named Rosa Parks sat down on a city bus after a long day of work.\n\nIn those days, there were unfair rules. Black passengers had to sit in the back of the bus. If the bus got full, they had to give up their seats to white passengers.\n\nWhen the driver told Rosa to give up her seat, she said no.\n\nRosa was arrested and taken to jail. But instead of making people afraid, her bravery inspired them. A young minister named Dr. Martin Luther King Jr. helped organize a boycott. For 381 days, Black citizens in Montgomery refused to ride the buses. They walked, carpooled, and took taxis instead.\n\nThe boycott worked. The Supreme Court ruled that the unfair bus rules were against the law.\n\nRosa Parks once said, \"I would like to be remembered as a person who wanted to be free and wanted others to also be free.\"\n\nRosa's one brave moment changed history. She showed that one person can make a big difference — even by simply refusing to give up a seat."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_hist_g1_l04_01",
+      "prompt": "What happened when Rosa Parks refused to give up her seat?",
+      "options": [
+        { "id": "a", "text": "She won an award" },
+        { "id": "b", "text": "She was arrested and taken to jail" },
+        { "id": "c", "text": "The driver gave her a medal" },
+        { "id": "d", "text": "Everyone cheered for her immediately" }
+      ],
+      "correctId": "b",
+      "hint": "Read the paragraph right after Rosa says no — what happened next?"
+    },
+    {
+      "id": "cq_hist_g1_l04_02",
+      "prompt": "What was the Montgomery Bus Boycott?",
+      "options": [
+        { "id": "a", "text": "A bus race" },
+        { "id": "b", "text": "A celebration on buses" },
+        { "id": "c", "text": "Black citizens refusing to ride buses for 381 days" },
+        { "id": "d", "text": "A new bus route" }
+      ],
+      "correctId": "c",
+      "hint": "Find the paragraph that describes what happened after Rosa was arrested."
+    },
+    {
+      "id": "cq_hist_g1_l04_03",
+      "prompt": "What did Rosa Parks want to be remembered for?",
+      "options": [
+        { "id": "a", "text": "Winning a race" },
+        { "id": "b", "text": "Being famous" },
+        { "id": "c", "text": "Wanting to be free and wanting others to be free" },
+        { "id": "d", "text": "Working on the bus" }
+      ],
+      "correctId": "c",
+      "hint": "Look for the quote from Rosa Parks in the passage."
+    },
+    {
+      "id": "cq_hist_g1_l04_04",
+      "prompt": "What lesson does the story of Rosa Parks teach us?",
+      "options": [
+        { "id": "a", "text": "Always follow unfair rules" },
+        { "id": "b", "text": "One person's bravery can make a big difference" },
+        { "id": "c", "text": "Buses are important for history" },
+        { "id": "d", "text": "Only leaders can change things" }
+      ],
+      "correctId": "b",
+      "hint": "Read the very last paragraph of the passage."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_hist_g1_l04_01",
+        "prompt": "Who was the first President of the United States?",
+        "options": [
+          { "id": "a", "text": "Abraham Lincoln" },
+          { "id": "b", "text": "George Washington" },
+          { "id": "c", "text": "Rosa Parks" },
+          { "id": "d", "text": "Marie Curie" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l04_02",
+        "prompt": "What was the Underground Railroad?",
+        "options": [
+          { "id": "a", "text": "A train that ran underground" },
+          { "id": "b", "text": "A secret network that helped enslaved people escape to freedom" },
+          { "id": "c", "text": "A type of school" },
+          { "id": "d", "text": "A government organization" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_hist_g1_l04_03",
+        "prompt": "What did Marie Curie discover?",
+        "options": [
+          { "id": "a", "text": "Electricity" },
+          { "id": "b", "text": "America" },
+          { "id": "c", "text": "Two new elements" },
+          { "id": "d", "text": "The telephone" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l04_04",
+        "prompt": "What was Abraham Lincoln's important achievement?",
+        "options": [
+          { "id": "a", "text": "He discovered electricity" },
+          { "id": "b", "text": "He built the first school" },
+          { "id": "c", "text": "He worked to end slavery and keep the country united" },
+          { "id": "d", "text": "He created the Underground Railroad" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_hist_g1_l04_05",
+        "prompt": "What is one way we can honor famous people from history?",
+        "options": [
+          { "id": "a", "text": "By forgetting what they did" },
+          { "id": "b", "text": "By being brave and fair ourselves" },
+          { "id": "c", "text": "By building statues only" },
+          { "id": "d", "text": "By doing nothing" }
+        ],
+        "correctId": "b"
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "social_studies_g1_l02",
+  "title": "Needs and Wants",
+  "grade": 1,
+  "subject": "social_studies",
+  "content": {
+    "text": "Every day, people use things to live and feel happy. But not everything we use is equally important. Some things are NEEDS and some things are WANTS.\n\n✅ NEEDS are things you MUST have to survive and stay healthy:\n• Food — your body needs fuel to grow and move\n• Water — you cannot live more than a few days without water\n• Shelter — protection from cold, heat, and rain (a home)\n• Clothing — keeps you warm and protects your body\n• Safety — being protected from harm\n\n🌟 WANTS are things that make life fun or more comfortable, but you don't need to survive:\n• Toys and games\n• Pizza and ice cream (you need food, but not pizza specifically!)\n• New sneakers (you need shoes, but not the newest ones)\n• Television and video games\n• Vacations\n\n💰 Making Choices:\nPeople don't always have enough money to get everything they want AND everything they need. When that happens, NEEDS come first!\n\nThis is called making a CHOICE. When you choose one thing, you give up another. The thing you give up is called a TRADE-OFF.\n\n🌍 Around the World:\nNot everyone has all their needs met. Many people around the world work hard just to have enough food, clean water, and shelter. Organizations like UNICEF and the Red Cross help people get their basic needs.\n\nUnderstanding needs and wants helps us make smart decisions and appreciate what we have.",
+    "diagrams": [
+      {
+        "src": "/assets/diagrams/needs_wants.svg",
+        "alt": "Two columns showing examples of needs and wants"
+      }
+    ]
+  },
+  "readingPassage": {
+    "title": "The Birthday Money",
+    "text": "Priya had been saving up for months. For her birthday, her relatives gave her $25 — more money than she had ever had at one time.\n\nAt school, she told her friend Amir about it.\n\n\"What are you going to buy?\" Amir asked.\n\n\"I want to get the new art set with 120 colored pencils,\" Priya said excitedly. \"It costs $22.\"\n\n\"Nice!\" said Amir. \"But didn't you also say your boots are too small now?\"\n\nPriya looked down at her feet. He was right. Her boots pinched her toes on cold mornings, and winter was coming.\n\nWhen she got home, she told her mom about the dilemma.\n\n\"The art set is a want,\" her mother said gently. \"New boots are a need — your feet are still growing and winter is coming.\"\n\n\"But I really want the pencils!\" Priya sighed.\n\n\"You can save up for them,\" her mother said. \"You already know how to save.\"\n\nPriya bought the boots. They were warm and comfortable and fit perfectly. As she looked at them, she felt good about her decision — even though part of her still wished for those pencils.\n\nShe put the remaining $3 in her savings jar and wrote on a piece of paper: Art set — keep saving!\n\nSometimes the smart choice isn't the most fun choice. But it's still a good one."
+  },
+  "comprehensionQuestions": [
+    {
+      "id": "cq_ss_g1_l02_01",
+      "prompt": "What did Priya want to buy with her birthday money?",
+      "options": [
+        { "id": "a", "text": "New boots" },
+        { "id": "b", "text": "An art set with 120 colored pencils" },
+        { "id": "c", "text": "A video game" },
+        { "id": "d", "text": "A bicycle" }
+      ],
+      "correctId": "b",
+      "hint": "Read the paragraph where Priya tells Amir what she plans to buy."
+    },
+    {
+      "id": "cq_ss_g1_l02_02",
+      "prompt": "Why did Priya decide to buy boots instead of the art set?",
+      "options": [
+        { "id": "a", "text": "The art set was sold out" },
+        { "id": "b", "text": "Boots were on sale" },
+        { "id": "c", "text": "Her old boots were too small and winter was coming — boots were a need" },
+        { "id": "d", "text": "Amir told her to" }
+      ],
+      "correctId": "c",
+      "hint": "What did Priya's mother explain about the difference between the two items?"
+    },
+    {
+      "id": "cq_ss_g1_l02_03",
+      "prompt": "What did Priya do with the money she had left after buying the boots?",
+      "options": [
+        { "id": "a", "text": "She gave it to Amir" },
+        { "id": "b", "text": "She put it in her savings jar" },
+        { "id": "c", "text": "She spent it on food" },
+        { "id": "d", "text": "She lost it" }
+      ],
+      "correctId": "b",
+      "hint": "Read the second-to-last paragraph of the story."
+    },
+    {
+      "id": "cq_ss_g1_l02_04",
+      "prompt": "What is the main lesson of this story?",
+      "options": [
+        { "id": "a", "text": "You should never buy wants" },
+        { "id": "b", "text": "Art is more important than shoes" },
+        { "id": "c", "text": "Needs should come before wants when making choices" },
+        { "id": "d", "text": "Birthday money should be saved forever" }
+      ],
+      "correctId": "c",
+      "hint": "Think about the decision Priya made and why she felt good about it."
+    }
+  ],
+  "finalAssessment": {
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "fa_ss_g1_l02_01",
+        "prompt": "Which of these is a NEED?",
+        "options": [
+          { "id": "a", "text": "A video game" },
+          { "id": "b", "text": "Clean water" },
+          { "id": "c", "text": "A bicycle" },
+          { "id": "d", "text": "A new toy" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l02_02",
+        "prompt": "Pizza is an example of a:",
+        "options": [
+          { "id": "a", "text": "Need" },
+          { "id": "b", "text": "Want (you need food, but not specifically pizza)" },
+          { "id": "c", "text": "Trade-off" },
+          { "id": "d", "text": "Shelter" }
+        ],
+        "correctId": "b"
+      },
+      {
+        "id": "fa_ss_g1_l02_03",
+        "prompt": "When you choose one thing and give up another, what is the thing you gave up called?",
+        "options": [
+          { "id": "a", "text": "A need" },
+          { "id": "b", "text": "A want" },
+          { "id": "c", "text": "A trade-off" },
+          { "id": "d", "text": "A savings" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l02_04",
+        "prompt": "If a family does not have enough money for everything, what should come FIRST?",
+        "options": [
+          { "id": "a", "text": "Wants" },
+          { "id": "b", "text": "Entertainment" },
+          { "id": "c", "text": "Needs" },
+          { "id": "d", "text": "Vacations" }
+        ],
+        "correctId": "c"
+      },
+      {
+        "id": "fa_ss_g1_l02_05",
+        "prompt": "Which of these is an example of a WANT?",
+        "options": [
+          { "id": "a", "text": "Clothing" },
+          { "id": "b", "text": "Food" },
+          { "id": "c", "text": "Shelter" },
+          { "id": "d", "text": "A new video game" }
+        ],
+        "correctId": "d"
+      }
+    ]
+  }
+}

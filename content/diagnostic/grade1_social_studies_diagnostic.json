@@ -1,0 +1,120 @@
+{
+  "grade": 1,
+  "subject": "social_studies",
+  "questions": [
+    {
+      "id": "diag_ss_g1_001",
+      "difficulty": 1,
+      "prompt": "Which of these is a NEED — something you must have to survive?",
+      "options": [
+        { "id": "a", "text": "A video game" },
+        { "id": "b", "text": "Food" },
+        { "id": "c", "text": "A bicycle" },
+        { "id": "d", "text": "A new toy" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_ss_g1_002",
+      "difficulty": 1,
+      "prompt": "What do we call the area right around where you live with homes, stores, and schools?",
+      "options": [
+        { "id": "a", "text": "A country" },
+        { "id": "b", "text": "A continent" },
+        { "id": "c", "text": "A neighborhood" },
+        { "id": "d", "text": "A desert" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_ss_g1_003",
+      "difficulty": 1,
+      "prompt": "Which of these people is a community helper?",
+      "options": [
+        { "id": "a", "text": "A movie character" },
+        { "id": "b", "text": "A firefighter" },
+        { "id": "c", "text": "A cartoon superhero" },
+        { "id": "d", "text": "A sports mascot" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_ss_g1_004",
+      "difficulty": 2,
+      "prompt": "When you choose one thing and give up another, the thing you gave up is called a:",
+      "options": [
+        { "id": "a", "text": "Need" },
+        { "id": "b", "text": "Want" },
+        { "id": "c", "text": "Trade-off" },
+        { "id": "d", "text": "Savings" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_ss_g1_005",
+      "difficulty": 2,
+      "prompt": "In the memory trick 'Never Eat Soggy Waffles,' what direction does the 'E' stand for?",
+      "options": [
+        { "id": "a", "text": "North" },
+        { "id": "b", "text": "East" },
+        { "id": "c", "text": "South" },
+        { "id": "d", "text": "West" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_ss_g1_006",
+      "difficulty": 2,
+      "prompt": "A farmer who grows food is an example of a:",
+      "options": [
+        { "id": "a", "text": "Consumer" },
+        { "id": "b", "text": "Producer" },
+        { "id": "c", "text": "Service provider" },
+        { "id": "d", "text": "Trader" }
+      ],
+      "correctId": "b"
+    },
+    {
+      "id": "diag_ss_g1_007",
+      "difficulty": 3,
+      "prompt": "What does fairness mean in a community?",
+      "options": [
+        { "id": "a", "text": "Everyone gets exactly the same thing always" },
+        { "id": "b", "text": "The strongest person wins" },
+        { "id": "c", "text": "Everyone gets what they need and is treated with respect" },
+        { "id": "d", "text": "Leaders make all the decisions" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_ss_g1_008",
+      "difficulty": 3,
+      "prompt": "In the United States, who makes national laws?",
+      "options": [
+        { "id": "a", "text": "The school principal" },
+        { "id": "b", "text": "The Mayor" },
+        { "id": "c", "text": "Congress" },
+        { "id": "d", "text": "Police officers" }
+      ],
+      "correctId": "c"
+    },
+    {
+      "id": "diag_ss_g1_009",
+      "difficulty": 3,
+      "prompt": "What does it mean to be a 'global citizen'?",
+      "options": [
+        { "id": "a", "text": "Traveling to every country in the world" },
+        { "id": "b", "text": "Understanding that your choices can affect people around the world" },
+        { "id": "c", "text": "Speaking five languages" },
+        { "id": "d", "text": "Living in the biggest city" }
+      ],
+      "correctId": "b"
+    }
+  ],
+  "difficultyBands": {
+    "0": { "lessonStartIndex": 0 },
+    "1": { "lessonStartIndex": 0 },
+    "2": { "lessonStartIndex": 2 },
+    "3": { "lessonStartIndex": 4 }
+  }
+}
