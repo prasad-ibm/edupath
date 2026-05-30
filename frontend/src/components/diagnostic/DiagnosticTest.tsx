@@ -20,9 +20,15 @@ export default function DiagnosticTest({ diagnostic, onComplete }: Props) {
   const [showTransition, setShowTransition] = useState(false);
 
   useEffect(() => {
+    if (state.isComplete) return;
     const next = pickNextQuestion(state, diagnostic.questions);
+    if (!next && state.questionsAnswered > 0) {
+      // All available questions exhausted — complete the diagnostic
+      onComplete(state.answers);
+      return;
+    }
     setCurrentQuestion(next);
-  }, [state, diagnostic.questions]);
+  }, [state, diagnostic.questions, onComplete]);
 
   function handleAnswer(questionId: string, correct: boolean) {
     const question = diagnostic.questions.find((q) => q.id === questionId);

@@ -4,7 +4,7 @@ export interface AdaptiveState {
   currentDifficulty: 1 | 2 | 3;
   consecutiveCorrect: number;
   consecutiveWrong: number;
-  answeredIds: Set<string>;
+  answeredIds: string[];           // plain array — reliable in React state
   answers: { questionId: string; difficulty: number; correct: boolean }[];
   questionsAnswered: number;
   stableCount: number;
@@ -20,7 +20,7 @@ export function createAdaptiveState(): AdaptiveState {
     currentDifficulty: 1,
     consecutiveCorrect: 0,
     consecutiveWrong: 0,
-    answeredIds: new Set(),
+    answeredIds: [],
     answers: [],
     questionsAnswered: 0,
     stableCount: 0,
@@ -37,12 +37,13 @@ export function pickNextQuestion(
   state: AdaptiveState,
   questions: DiagnosticQuestion[]
 ): DiagnosticQuestion | null {
+  const answered = new Set(state.answeredIds);
   const available = questions.filter(
-    (q) => q.difficulty === state.currentDifficulty && !state.answeredIds.has(q.id)
+    (q) => q.difficulty === state.currentDifficulty && !answered.has(q.id)
   );
   if (available.length === 0) {
-    // Fall back to any unanswered question
-    const fallback = questions.filter((q) => !state.answeredIds.has(q.id));
+    // Fall back to any unanswered question regardless of difficulty
+    const fallback = questions.filter((q) => !answered.has(q.id));
     return fallback[0] ?? null;
   }
   return available[0];
@@ -59,7 +60,7 @@ export function processAnswer(
   difficulty: number
 ): AdaptiveState {
   const newAnswers = [...state.answers, { questionId, difficulty, correct }];
-  const newAnsweredIds = new Set(state.answeredIds).add(questionId);
+  const newAnsweredIds = [...state.answeredIds, questionId];
   const questionsAnswered = state.questionsAnswered + 1;
 
   let { consecutiveCorrect, consecutiveWrong, currentDifficulty, stableCount } = state;
