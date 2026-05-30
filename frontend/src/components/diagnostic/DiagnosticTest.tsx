@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { DiagnosticData, DiagnosticQuestion } from '../../types/content';
 import {
@@ -15,20 +15,12 @@ interface Props {
 }
 
 export default function DiagnosticTest({ diagnostic, onComplete }: Props) {
-  const [state, setState] = useState<AdaptiveState>(createAdaptiveState);
-  const [currentQuestion, setCurrentQuestion] = useState<DiagnosticQuestion | null>(null);
-  const [showTransition, setShowTransition] = useState(false);
+  const initialState = createAdaptiveState();
+  const firstQuestion = pickNextQuestion(initialState, diagnostic.questions);
 
-  useEffect(() => {
-    if (state.isComplete) return;
-    const next = pickNextQuestion(state, diagnostic.questions);
-    if (!next && state.questionsAnswered > 0) {
-      // All available questions exhausted — complete the diagnostic
-      onComplete(state.answers);
-      return;
-    }
-    setCurrentQuestion(next);
-  }, [state, diagnostic.questions, onComplete]);
+  const [state, setState] = useState<AdaptiveState>(initialState);
+  const [currentQuestion, setCurrentQuestion] = useState<DiagnosticQuestion | null>(firstQuestion);
+  const [showTransition, setShowTransition] = useState(false);
 
   function handleAnswer(questionId: string, correct: boolean) {
     const question = diagnostic.questions.find((q) => q.id === questionId);
@@ -37,12 +29,21 @@ export default function DiagnosticTest({ diagnostic, onComplete }: Props) {
     setShowTransition(true);
     setTimeout(() => {
       const newState = processAnswer(state, questionId, correct, question.difficulty);
-      setState(newState);
-      setShowTransition(false);
 
       if (newState.isComplete) {
         onComplete(newState.answers);
+        return;
       }
+
+      const next = pickNextQuestion(newState, diagnostic.questions);
+      if (!next) {
+        onComplete(newState.answers);
+        return;
+      }
+
+      setState(newState);
+      setCurrentQuestion(next);
+      setShowTransition(false);
     }, 600);
   }
 
