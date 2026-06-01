@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["rubber_band", "box"],
-        "animationKey": "bubbling",
+        "animationKey": "vibrating",
         "resultLabel": "The rubber band vibrates and makes sound! The empty box amplifies it — the air inside the box resonates with the vibrations, making the sound louder. This is how guitars work!"
       }
     ]

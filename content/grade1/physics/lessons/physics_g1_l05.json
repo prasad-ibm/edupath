@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["heavy_box", "ramp_board"],
-        "animationKey": "mixing",
+        "animationKey": "rolling",
         "resultLabel": "The box rolls up the ramp easily! The inclined plane spreads the work over a longer distance, so you need less force at any one moment. This is why ramps are used instead of stairs for heavy loads!"
       }
     ]

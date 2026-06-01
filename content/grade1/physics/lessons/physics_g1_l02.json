@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["rubber_duck", "water_tank"],
-        "animationKey": "mixing",
+        "animationKey": "floating",
         "resultLabel": "The rubber duck floats! It's less dense than water — the air inside helps it stay on top. The water pushes up on it with a force called buoyancy!"
       }
     ]

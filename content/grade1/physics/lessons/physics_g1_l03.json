@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["flashlight", "toy_block"],
-        "animationKey": "circuit",
+        "animationKey": "shadow",
         "resultLabel": "A shadow appears behind the block! The opaque block blocks the light from passing through, creating a dark shadow. Light travels in straight lines, so the shadow is the same shape as the block!"
       }
     ]

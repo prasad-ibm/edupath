@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["ball", "ramp"],
-        "animationKey": "mixing",
+        "animationKey": "rolling",
         "resultLabel": "The ball rolls down the ramp! The push force set it in motion, and gravity keeps it rolling downhill. The ball goes faster on the smooth ramp than it would on a rough surface!"
       }
     ]

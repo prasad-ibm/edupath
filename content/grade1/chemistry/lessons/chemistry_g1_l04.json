@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["raincoat", "sponge"],
-        "animationKey": "dissolving",
+        "animationKey": "waterproof",
         "resultLabel": "The raincoat repels water — it's waterproof! The sponge soaks it all up — it's absorbent! Different materials have very different properties."
       }
     ]

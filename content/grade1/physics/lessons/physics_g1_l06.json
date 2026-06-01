@@ -21,7 +21,7 @@
     "combinations": [
       {
         "requiredItems": ["magnet", "iron_nail"],
-        "animationKey": "circuit",
+        "animationKey": "magnetic",
         "resultLabel": "The magnet attracts the iron nail! Iron contains iron atoms that line up with the magnetic field. The magnetic force pulls them together — without them even touching at first!"
       }
     ]
